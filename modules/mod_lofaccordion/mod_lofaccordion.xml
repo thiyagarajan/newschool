@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5.0"
+	client="site"
+	method="upgrade">
+    <name>Lof Accordion Module</name>
+    <creationDate>Jan 2012</creationDate>
+    <author>LandOfCoder</author>
+    <copyright>GNU / GPL2 http://www.gnu.org/licenses/gpl-2.0.html</copyright>
+    <authorEmail>landofcoder@gmail.com</authorEmail>
+    <authorUrl>http://www.landofcoder.com</authorUrl>
+    <version>2.2</version>
+	<description>
+			<![CDATA[ <div style="font-size:10px;">
+			<a target="_blank" href="http://landofcoder.com/joomla/f33/lof-accordion-module">. <b>Lof Accordion Module</b></a><p><i>The Lof Accordion Module is a good choice for showing serial content to  bring more Efficiency transfering information to readers.  The module is built with flexible and power features such as loading any modules inside each item, theming supported, you can use this in difference purposes as the Question and Answer function, Showing your portfolios , contacting addresses ...etc</i><br><br></br><b>Lof Accordion Module Module</b><ul><li><a href="http://landofcoder.com/submit-request.html">Report Bug </a></li><li><a href="http://landofcoder.com/supports.html?id=27">Discussion</a></li></ul><p></p>Copyright <a href="http://landofcoder.com"><i>LandOfCoder.Com</i></a></a>
+			]]>
+	</description>
+     <files>
+         <filename module="mod_lofaccordion">mod_lofaccordion.php</filename>
+         <filename module="mod_lofaccordion">helper.php</filename>
+		 <filename module="mod_lofaccordion">index.html</filename>
+         <folder module="mod_lofaccordion">libs</folder>
+		  <folder module="mod_lofaccordion">assets</folder>
+         <folder module="mod_lofaccordion">tmpl</folder>
+    </files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_lofaccordion.ini</language>
+	</languages>
+	<config>	
+			<fields name="params" addfieldpath="modules/mod_lofaccordion/libs/elements">
+			  
+			   <fieldset name="navigator_form" title="NAVIGATOR_FORM_F">
+					<field  type="loftoolbar" name="loftoolbar">
+					  <option>Global</option>
+					   <option>Data Source</option>
+
+					 
+					  <option>Effect</option>
+					  <option>Advanded</option>
+					</field>
+				  </fieldset>
+			  <fieldset name="GLOBALSETTING">
+			     <field type="lofspacer" />
+			     <field name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_SUFFIX" description="MODULE_CLASS_SUFFIX_DESC" />  
+			
+			    <field name="theme" type="folderlist" hide_none="true"   default="" label="SELECT_THEME" directory="modules/mod_lofaccordion/tmpl/" filter="" exclude="_navigator|_contentslider" stripext="" /> 
+			  		<field name="item_content" type="list" default="description-image" label="ITEM_CONTENT" description="ITEM_CONTENT_DESC">
+						<option value="introtext">INTROTEXT</option>
+						<option value="description-image">DESCRIPTION_IMAGE</option>
+					</field>
+				
+			   <field name="limit_description_by" type="list" default="char" label="LIMIT_DESCRIPTION_BY" description="LIMIT_DESCRIPTION_BY_DESC">
+				  <option value="word">WORD</option>
+				  <option value="char">CHARACTER</option>
+			  </field>  
+			  <field name="description_max_chars" type="text" default="100" label="DESCIPTION_MAX_CHARS" description="DESCIPTION_MAX_CHARS_DESC" />
+			  <field name="replacer" type="text" default="..." label="REPLACER" description="REPLACER_DESC" />  
+			 
+		 <field name="main_height" type="text" default="110" label="DISPLAY_MAIN_HEIGHT" description="DISPLAY_MAIN_HEIGHT_DESC"></field>
+        <field name="main_width" type="text" default="180" label="DISPLAY_MAIN_WIDTH" description="DISPLAY_MAIN_WIDTH_DESC"></field>
+        <field 
+			  name="show_button_link" 
+			  type="list" class="lofswitch" 
+			  default="1"
+			  label="SHOW_READMORE"
+			  description="SHOW_READMORE_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+           </field>
+		   
+			  </fieldset>
+			  
+			  
+        
+       
+			<fieldset name="SOURCESETTING">
+			   
+					<field name="source" type="radio" default="category" label="SOURCE_FROM"  description="SOURCE_FROM_DESC" >
+						<option value="category">CATEGORY</option>
+						<option value="article_ids">ARTICLES_IDS</option>
+					</field>
+					<field name="article_ids" type="text" default="" label="ARTICLES_IDS"  description="ARTICLES_IDS_DESC" size="40" />
+						
+					<field name="category" type="category"
+									extension="com_content"
+									multiple="true"
+									size="10"
+									label="JCATEGORY"
+									description="MOD_ARTICLES_NEWS_FIELD_CATEGORY_DESC" />
+					 <field
+          name="user_id"
+          type="list"
+          default="0"
+          label="MOD_LATEST_NEWS_FIELD_USER_LABEL"
+          description="MOD_LATEST_NEWS_FIELD_USER_DESC">
+          <option
+            value="0">MOD_LATEST_NEWS_VALUE_ANYONE</option>
+          <option
+            value="by_me">MOD_LATEST_NEWS_VALUE_ADDED_BY_ME</option>
+          <option
+            value="not_me">MOD_LATEST_NEWS_VALUE_NOTADDED_BY_ME</option>
+        </field>
+        <field
+          name="show_featured"
+          type="list"
+          default=""
+          label="MOD_LATEST_NEWS_FIELD_FEATURED_LABEL"
+          description="MOD_LATEST_NEWS_FIELD_FEATURED_DESC">
+          <option
+            value="">JSHOW</option>
+          <option
+            value="0">JHIDE</option>
+          <option
+            value="1">MOD_LATEST_NEWS_VALUE_ONLY_SHOW_FEATURED</option>
+        </field>
+					<field name="ordering" type="list" default="created-asc" label="ARTCILES_SORTED_BY" description="ARTCILES_SORTED_BY_DESC">
+					  <option value="id-asc">ID_ASCENDING</option>
+					  <option value="id-desc">ID_DESCENDING</option>
+						<option value="ordering-asc">ORDERING_ASCENDING</option>
+						<option value="ordering-desc">ORDERING_DESCENDING</option>
+						<option value="hits-asc">HIT_ASCENDING</option>
+						<option value="hits-desc">HIT_DESCENDING</option>
+						<option value="created-desc">DATE_ASCENDING</option>
+						<option value="created-asc">DATE_DESCENDING</option>
+						<option value="publish_up-asc">PUBLISHED_DATE_ASCENDING</option>
+						<option value="publish_up-desc">PUBLISHED_DATE_DESCENDING</option>
+						<option value="rand-">RANDOM</option>
+					</field>
+					<field name="limit_items" type="text" default="5" label="LIMIT_ITEMS" description="LIMIT_ITEMS_DESC" />
+			</fieldset>	
+			
+			 <fieldset name="EFFECTSETTING">
+				 <field name="trigger_event" type="radio" default="click" label="TRIGGER_EVENT"  description="TRIGGER_EVENT_DESC" >
+						<option value="mouseover">HOVER</option>
+						<option value="click">CLICK</option>
+					</field>
+			 	   <field 
+          name="use_opacity" 
+         type="list" class="lofswitch" 
+          default="0"
+          label="USE_OPACITY_EFFECT"
+          description="USE_OPACITY_EFFECT_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+		  <field 
+			  name="allway_hidden" 
+			   type="list" class="lofswitch" 
+			  default="1"
+			  label="ALWAYS_HIDDEN"
+			  description="ALWAYS_HIDDEN_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+           </field>
+		    <field 
+			  name="allway_hidden" 
+			  type="list" class="lofswitch" 
+			  default="0"
+			  label="HIDDEN_ALL"
+			  description="HIDDEN_ALL_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+           </field>
+			<field name="open_item" type="text" default="0" label="START_SLIDE" description="START_SLIDE_DESC" />
+      
+          <field name="interval" type="text" default="5000" label="INTERVAL" description="INTERVAL_DESC" />
+          <field name="duration" type="text" default="500" label="ANIMATION_DURATION" description="ANIMATION_DURATION_DESC" />
+          <field name="effect" type="list" default="Fx.Transitions.Quad.easeInOut" label="ANIMATION_TRANSITION" description="ANIMATION_TRANSITION_DESC">
+             <option value="Fx.Transitions.linear">linear</option>
+            <option value="Fx.Transitions.quartOut">QuartOut</option>
+            <option value="Fx.Transitions.Quad.easeIn">Quad.easeIn</option>
+            <option value="Fx.Transitions.Quad.easeOut">Quad.easeOut</option>
+            <option value="Fx.Transitions.Quad.easeInOut">Quad.easeInOut</option>
+            <option value="Fx.Transitions.Cubic.easeIn">Cubic.easeIn</option>
+            <option value="Fx.Transitions.Cubic.easeOut">Cubic.easeOut</option>
+            <option value="Fx.Transitions.Cubic.easeInOut">Cubic.easeInOut</option>
+            <option value="Fx.Transitions.Quart.easeIn">Quart.easeIn</option>
+            <option value="Fx.Transitions.Quart.easeOut">Quart.easeOut</option>
+            <option value="Fx.Transitions.Quart.easeInOut">Quart.easeInOut</option>
+            <option value="Fx.Transitions.Quint.easeIn">Quint.easeIn</option>
+            <option value="Fx.Transitions.Quint.easeOut">Quint.easeOut</option>
+            <option value="Fx.Transitions.Quint.easeInOut">Quint.easeInOut</option>
+            <option value="Fx.Transitions.Pow.easeIn">Pow.easeIn</option>
+            <option value="Fx.Transitions.Pow.easeOut">Pow.easeOut</option>
+            <option value="Fx.Transitions.Pow.easeInOut">Pow.easeInOut</option>
+            <option value="Fx.Transitions.Expo.easeIn">Expo.easeIn</option>
+            <option value="Fx.Transitions.Expo.easeOut">Expo.easeOut</option>
+            <option value="Fx.Transitions.Expo.easeInOut">Expo.easeInOut</option>
+            <option value="Fx.Transitions.Circ.easeIn">Circ.easeIn</option>
+            <option value="Fx.Transitions.Circ.easeOut">Circ.easeOut</option>
+            <option value="Fx.Transitions.Circ.easeInOut">Circ.easeInOut</option>
+            <option value="Fx.Transitions.Sine.easeIn">Sine.easeIn</option>
+            <option value="Fx.Transitions.Sine.easeOut">Sine.easeOut</option>
+            <option value="Fx.Transitions.Sine.easeInOut">Sine.easeInOut</option>
+            <option value="Fx.Transitions.Back.easeIn">Back.easeIn</option>
+            <option value="Fx.Transitions.Back.easeOut">Back.easeOut</option>
+            <option value="Fx.Transitions.Back.easeInOut">Back.easeInOut</option>
+            <option value="Fx.Transitions.Bounce.easeIn">Bounce.easeIn</option>
+            <option value="Fx.Transitions.Bounce.easeOut">Bounce.easeOut</option>
+            <option value="Fx.Transitions.Bounce.easeInOut">Bounce.easeInOut</option>
+            <option value="Fx.Transitions.Elastic.easeIn">Elastic.easeIn</option>
+            <option value="Fx.Transitions.Elastic.easeOut">Elastic.easeOut</option>
+            <option value="Fx.Transitions.Elastic.easeInOut">Elastic.easeInOut</option>         
+          </field> 
+          
+          
+			 </fieldset>  
+			   
+			<fieldset name="advanced">
+				
+					 <field 
+          name="enable_cache" 
+          type="list" 
+          default="0" 
+          label="CACHE" 
+          description="CACHING_DESC">
+            <option value="1">Use global</option>
+            <option value="0">No caching</option>
+        </field>
+        
+					<field name="cache_time" type="text" default="30" label="CACHE_TIME" description="CACHE_TIME_DESC" />
+					
+					<field name="auto_renderthumb"  type="list" class="lofswitch"  default="1" label="RENDER_THUMBNAIL" description="RENDER_THUMBNAIL_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+						
+					 <field name="open_target" type="list" default="_parent" label="CLICK_LINK_OPEN_IN" description="CLICK_LINK_OPEN_IN_DESC">
+						  <option value="_blank">New window</option>
+						  <option value="_parent">Parent window</option>
+						  <option value="modal">Show In Modal</option>
+					 </field>	
+			</fieldset>
+		     <fieldset name="end_form" title="ENDFORM">
+        <field  type="lofspacer" name="end_form" title="end"/>
+      </fieldset>
+		</fields>	
+	</config>
+			
+</extension>
+

@@ -659,7 +659,11 @@ div.default div.at-dropdown dt:hover span.header-r {
     display: none;
 }
 
-#at-cssmenu li.active a{
+#at-cssmenu li.active a {
     display: block;
     color: #F57B2D;
+}
+
+#at-tabmodulewrap-top #at-tabmodulewrap-bot {
+    height: 217px !important;
 }

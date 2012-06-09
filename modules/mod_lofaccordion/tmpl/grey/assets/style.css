@@ -1,0 +1,46 @@
+ .lof-accordion-grey > .lof-toggler{
+	background:#DADADA;
+	cursor:hand;
+	cursor:pointer;
+	overflow:hidden;
+	border-bottom:1px dotted #DEDEDE;
+	font-size:95%;
+	text-transform:uppercase;
+	margin-top:1px;
+	font-weight:bold;
+
+}
+.lof-accordion-grey > .lof-toggler > div.lof-title, .lof-accordion-grey > .lof-toggler > .lof-arrow{
+	float:left; 
+	padding:2px 0px;
+}
+.lof-accordion-grey > .lof-toggler:hover{ background:#F8F8F8; }
+.lof-accordion-grey > .lof-toggler > .lof-arrow{width:30px;background:url(images/arrow.png) no-repeat right -5px;}
+.lof-accordion-grey .lof-active .lof-arrow{ background:url(images/arrow.png) no-repeat right -41px}
+.lof-accordion-grey > .lof-toggler img {
+ 	padding: 2px 0px 0 8px!important;
+	margin:0!important;
+		float:left
+}
+
+.lof-accordion-grey .article-image{
+		 border: 1px solid #F0F0F0;
+		float: left;
+		margin: 0 6px;
+		padding: 5px;
+}
+.lof-accordion-grey > .lof-toggler span.lof-title{
+	padding-left:8px;	  
+}
+.lof-accordion-grey > .lof-toggler span.lof-subdesc{
+	font-size:85%;
+	font-weight:normal
+}
+.lof-accordion-grey .lof-element .lof-inner{
+	overflow:hidden;
+	border:#DADADA solid 1px!important;
+	padding:12px;
+}
+ .lof-accordion-grey  .lof-inner{ padding-top:12px; padding:12px 5px 10px 5px}
+ 
+ .lof-accordion-grey .lof-image{ margin:2px 5px; }

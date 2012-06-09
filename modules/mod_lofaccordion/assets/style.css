@@ -1,0 +1,35 @@
+ .lof-accordion-default > .lof-toggler{
+	padding: 4px 0 0 0px!important;
+	background:url(images/close.png) no-repeat  center right;
+	cursor:hand;
+	cursor:pointer;
+	overflow:hidden;
+	border-bottom:1px dotted #DEDEDE;
+	font-size:105%;
+	height:25px;
+	position:relative;
+	font-weight:bold
+}
+.lof-accordion-default > .lof-toggler img {
+ 	padding: 4px 0px 0 8px!important;
+	margin:0!important;
+	float:left
+ }
+ .lof-accordion-default > .lof-toggler span.lof-title{
+	padding-left:12px;	  
+ }
+ .lof-accordion-default > .lof-toggler span.lof-subdesc{
+	font-size:85%;
+	font-weight:normal
+ }
+.lof-accordion-default .lof-element{
+	overflow:hidden;
+}
+ .lof-accordion-default  .lof-active{
+	background:url(images/open.png) no-repeat  center right !important;
+}
+
+
+ .lof-accordion-default  .lof-inner{ padding-top:12px; padding:12px 5px 10px 5px; border:solid 1px #F2F2F2}
+ 
+ .lof-accordion-default .lof-image{ margin:2px 5px; }

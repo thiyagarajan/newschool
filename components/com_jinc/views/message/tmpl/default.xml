@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="LAYOUT_NEWSLETTER_TITLE" hidden="true">
+        <message>
+			<![CDATA[LAYOUT_MESSAGE_DESC]]>
+        </message>
+    </layout>
+    <state>
+        <name>LAYOUT_MESSAGE_TITLE</name>
+        <description>LAYOUT_MESSAGE_DESC</description>
+        <url>
+            <param name="msg_id" type="text" default="0" label="CONFIG_MSG_ID" description="CONFIG_MSG_ID_DESC" size="2" />
+        </url>
+    </state>
+</metadata>

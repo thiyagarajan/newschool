@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" client="administrator" version="1.7.0" method="upgrade" position="cpanel">
+	<name>JComments Latest Backend</name>
+	<creationDate>03/04/2012</creationDate>
+	<author>smart</author>
+	<copyright>Copyright 2006-2012 Joomlatune.ru All rights reserved!</copyright>
+	<authorEmail>smart@joomlatune.ru</authorEmail>
+	<authorUrl>http://www.joomlatune.ru</authorUrl>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>2.0</version>
+	<description>MOD_JCOMMENTS_LATEST_BACKEND_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_jcomments_latest_backend">mod_jcomments_latest_backend.php</filename> 
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_jcomments_latest_backend.xml</filename> 
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_jcomments_latest_backend.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_jcomments_latest_backend.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_jcomments_latest_backend.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_jcomments_latest_backend.sys.ini</language>
+		<language tag="uk-UA">uk-UA/uk-UA.mod_jcomments_latest_backend.ini</language>
+		<language tag="uk-UA">uk-UA/uk-UA.mod_jcomments_latest_backend.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="count"
+					type="text"
+					default="5"
+					label="MOD_JCOMMENTS_LATEST_BACKEND_FIELD_ITEMS_LABEL"
+					description="MOD_JCOMMENTS_LATEST_BACKEND_FIELD_ITEMS_DESC" />
+	
+				<field
+					name="limit_comment_text"
+					type="text"
+					size="5"
+					default="100"
+					label="MOD_JCOMMENTS_LATEST_BACKEND_FIELD_LIMIT_COMMENT_TEXT_LABEL"
+					description="MOD_JCOMMENTS_LATEST_BACKEND_FIELD_LIMIT_COMMENT_TEXT_DESC" />
+
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="JComments Latest Backend">http://www.joomlatune.ru/updates/jcomments-latest-backend.xml</server>
+	</updateservers>
+</install>

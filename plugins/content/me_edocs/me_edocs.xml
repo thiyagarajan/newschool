@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+    <name>Edocs - Embed Documents</name>
+    <author>MediaEventi</author>
+    <creationDate>March 2012</creationDate>
+    <copyright>Copyright (C) 2012 MediaEventi. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>webmaster@mediaeventi.it</authorEmail>
+    <authorUrl>http://mediaeventi.it/en/projects/joomla/edocs</authorUrl>
+    <version>1.2</version>
+    <description>PLG_CONTENT_EDOCS_DESCRIPTION</description>
+	
+	<!-- Joomla 1.5 -->
+	<params>
+		<param name="@spacer" type="spacer" default="&lt;b&gt;PLUGIN CONFIGURATION&lt;/b&gt;" label="" description="" />
+		<param name="download_text" type="text" default="Download" label="PLG_CONTENT_EDOCS_DOWNLOAD_TEXT_LABEL" description="PLG_CONTENT_EDOCS_DOWNLOAD_TEXT_DESC" />	
+		<param name="root" type="text" default="images/stories" label="PLG_CONTENT_EDOCS_ROOT_LABEL" description="PLG_CONTENT_EDOCS_ROOT_DESC" />	
+		<param name="width" type="text" default="500" label="PLG_CONTENT_EDOCS_DEFAULT_WIDTH_LABEL" description="PLG_CONTENT_EDOCS_DEFAULT_WIDTH_DESC" />	
+		<param name="height" type="text" default="400" label="PLG_CONTENT_EDOCS_DEFAULT_HEIGHT_LABEL" description="PLG_CONTENT_EDOCS_DEFAULT_HEIGHT_DESC" />	
+	</params>
+		
+	<params group="advanced">
+		<param name="@spacer" type="spacer" default="&lt;b&gt;DEBUG MODE&lt;/b&gt;" label="" description="" />
+		<param name="debug" type="radio" default="0" label="PLG_CONTENT_EDOCS_DEBUG_LABEL" description="PLG_CONTENT_EDOCS_DEFAULT_HEIGHT_DESC" >	 
+			<option value="1">PLG_CONTENT_EDOCS_DEBUG_VALUE_YES</option>
+			<option value="0">PLG_CONTENT_EDOCS_DEBUG_VALUE_NO</option>
+		</param>
+		<param name="@spacer" type="spacer" default="&lt;b&gt;INTERNET EXPLORER COMPATIBILITY WORKAROUND&lt;/b&gt;" label="" description="" />
+		<param name="ie_compatibility" type="radio" default="0" label="PLG_CONTENT_EDOCS_IE_COMPATIBILITY" description="PLG_CONTENT_EDOCS_IE_COMPATIBILITY_DESC" >	 
+			<option value="1">PLG_CONTENT_EDOCS_IE_COMPATIBILITY_VALUE_YES</option>
+			<option value="0">PLG_CONTENT_EDOCS_IE_COMPATIBILITY_VALUE_NO</option>
+		</param>	
+		<param name="ie_text" type="text" default="Click here to view online" label="PLG_CONTENT_EDOCS_IE_TEXT_LABEL" description="PLG_CONTENT_EDOCS_IE_TEXT_LABEL_DESC" />	  		
+    </params>
+	
+	
+	<!-- Joomla 1.6 / 1.7 / 2.5 -->
+	<config>
+		 <fields name="params">
+            <fieldset name="basic">
+				<field name="download_text" type="text" default="Download" label="PLG_CONTENT_EDOCS_DOWNLOAD_TEXT_LABEL" description="PLG_CONTENT_EDOCS_DOWNLOAD_TEXT_DESC" />
+				<field name="root" type="text" default="images/stories" label="PLG_CONTENT_EDOCS_ROOT_LABEL" description="PLG_CONTENT_EDOCS_ROOT_DESC" />				
+				<field name="width" type="text" default="500" label="PLG_CONTENT_EDOCS_DEFAULT_WIDTH_LABEL" description="PLG_CONTENT_EDOCS_DEFAULT_WIDTH_DESC" />				
+				<field name="height" type="text" default="400" label="PLG_CONTENT_EDOCS_DEFAULT_HEIGHT_LABEL" description="PLG_CONTENT_EDOCS_DEFAULT_HEIGHT_DESC" />				
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="debug" type="radio" default="0" label="PLG_CONTENT_EDOCS_DEBUG_LABEL" description="PLG_CONTENT_EDOCS_DEBUG_DESC" >	 
+					<option value="1">PLG_CONTENT_EDOCS_DEBUG_VALUE_YES</option>
+					<option value="0">PLG_CONTENT_EDOCS_DEBUG_VALUE_NO</option>
+				</field>
+				<field name="ie_compatibility" type="radio" default="0" label="PLG_CONTENT_EDOCS_IE_COMPATIBILITY" description="PLG_CONTENT_EDOCS_IE_COMPATIBILITY_DESC" >	 
+					<option value="1">PLG_CONTENT_EDOCS_IE_COMPATIBILITY_VALUE_YES</option>
+					<option value="0">PLG_CONTENT_EDOCS_IE_COMPATIBILITY_VALUE_NO</option>
+				</field>
+				<field name="ie_text" type="text" default="Click here to view online" label="PLG_CONTENT_EDOCS_IE_TEXT_LABEL" description="PLG_CONTENT_EDOCS_IE_TEXT_LABEL_DESC" />
+			</fieldset>
+		 </fields>
+	</config>
+	
+	<files>
+        <filename plugin="me_edocs">me_edocs.php</filename>
+    </files>
+	
+	<languages>
+			<language tag="en-GB">en-GB.plg_content_me_edocs.sys.ini</language>
+			<language tag="en-GB">en-GB.plg_content_me_edocs.ini</language>
+	</languages>	
+	
+</install>

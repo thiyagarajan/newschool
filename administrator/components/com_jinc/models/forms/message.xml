@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_jinc/models/fields">
+        <field name="id" type="hidden" Default="0" label="JGLOBAL_FIELD_ID_LABEL"
+            required="false" readonly="true" class="readonly" hidden="true" />
+
+        <field name="subject" type="text" class="inputbox" size="50"
+            label="COM_JINC_SUBJECT" description="COM_JINC_SUBJECT_desc"
+            required="true" />
+
+        <field name="news_id" type="JINCNewsletter" label="COM_JINC_NEWSLETTER"
+            description="COM_JINC_NEWSLETTER_DESC" class="inputbox"
+            required="true" onchange="getDefaultTemplate();" />
+
+        <field name="body" type="editor"
+            label="COM_JINC_BODY"  description="COM_JINC_BODY_DESC"
+            class="inputbox" required="true"
+            filter="safehtml" buttons="true" />
+    </fieldset>
+
+    <fieldset name="basic_opts" label="COM_JINC_BASIC_OPTIONS" >
+        <field name="bulkmail" type="list" label="COM_JINC_BULKMAIL"
+            description="COM_JINC_BULKMAIL_DESC" class="inputbox" size="0"
+            default="0">
+            <option value="1">COM_JINC_BULKMAIL_YES</option>
+            <option value="0">COM_JINC_BULKMAIL_NO</option>
+        </field>
+
+        <field name="plaintext" type="list" label="COM_JINC_PLAINTEXT"
+            description="COM_JINC_PLAINTEXT_DESC" class="inputbox" size="1"
+            default="0">
+            <option value="1">COM_JINC_PLAINTEXT_YES</option>
+            <option value="0">COM_JINC_PLAINTEXT_NO</option>
+        </field>
+    </fieldset>
+
+    <fields name="attachment">
+        <field name="attach0" type="media" class="inputbox" size="35" maxlength="250"
+            label="COM_JINC_ATTACH0" description="COM_JINC_ATTACH0_DESC"/>
+
+        <field name="attach1" type="media" class="inputbox" size="35" maxlength="250"
+            label="COM_JINC_ATTACH1" description="COM_JINC_ATTACH1_DESC"/>
+
+        <field name="attach2" type="media" class="inputbox" size="35" maxlength="250"
+            label="COM_JINC_ATTACH2" description="COM_JINC_ATTACH2_DESC"/>
+
+        <field name="attach3" type="media" class="inputbox" size="35" maxlength="250"
+            label="COM_JINC_ATTACH3" description="COM_JINC_ATTACH3_DESC"/>
+
+        <field name="attach4" type="media" class="inputbox" size="35" maxlength="250"
+            label="COM_JINC_ATTACH4" description="COM_JINC_ATTACH4_DESC"/>
+
+    </fields>
+</form>

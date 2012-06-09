@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="search" method="upgrade">
+	<name>Search - EventList</name>
+	<author>Christoph Lukes, Edmond Duggan, Pascal Eilrich</author>
+	<creationDate>2011-10-18</creationDate>
+	<copyright>(C) 2005 - 2009 Christoph Lukes</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@schlu.net</authorEmail>
+	<authorUrl>www.schlu.net</authorUrl>
+	<version>1.0.2 Stable</version>
+	<description>Search Plugin for the EventList Component</description>
+
+	<files>
+		<filename plugin="eventlist">eventlist.php</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_search_eventlist.ini</language>
+		<language tag="de-DE">languages/de-DE.plg_search_eventlist.ini</language>
+	</languages>
+
+	<config>
+    <fields name="params">
+    <fieldset name="basic">
+		<field name="search_limit" type="text" size="5" default="50" label="PLG_EVENTLIST_SEARCHBOT_SEARCH_LIMIT" description="PLG_EVENTLIST_SEARCHBOT_NUMBER_ITEMS_RETURN"/>
+	</fieldset>
+    </fields>
+    </config>
+
+</extension>

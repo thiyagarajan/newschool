@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="attribs">
+        <fieldset name="addictional" label="COM_JINC_ATTRIBUTES">
+            <field name="name" type="list" label="COM_JINC_NAME" description="name" Default="">
+                <option value="">COM_JINC_ATTRIBUTE_NONE</option>
+                <option value="1">COM_JINC_ATTRIBUTE_MANDATORY</option>
+                <option value="2">COM_JINC_ATTRIBUTE_OPTIONAL</option>
+            </field>
+        </fieldset>
+    </fields>
+</form>

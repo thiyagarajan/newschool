@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site"  method="upgrade">
+	<name>Latest Events</name>
+	<creationDate>2011-10-18</creationDate>
+	<author>Christoph Lukes, Edmond Duggan, Pascal Eilrich</author>
+	<copyright>GNU General Public License</copyright>
+	<authorEmail>info@schlu.net</authorEmail>
+	<authorUrl>http://www.schlu.net</authorUrl>
+	<version>1.0.2 Stable</version>
+	<description>EventList Module</description>
+
+	<files>
+		<filename module="mod_eventlist">mod_eventlist.php</filename>
+		<filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_eventlist.ini</language>
+		<language tag="de-DE">languages/de-DE.mod_eventlist.ini</language>
+		<language tag="nl-NL">languages/nl-NL.mod_eventlist.ini</language>
+		<language tag="hr-HR">languages/hr-HR.mod_eventlist.ini</language>
+	</languages>
+	<config>
+    <fields name="params">
+	<fieldset name="basic">
+		<field name="count" type="text" default="5" label="MOD_EVENTLIST_EVENTS_IN_MODULE" description="MOD_EVENTLIST_EVENTS_IN_MODULE_DESC" />
+		<field name="type" type="list" default="0" label="MOD_EVENTLIST_UPCOMING_OR_ARCHIVED" description="MOD_EVENTLIST_UPCOMING_OR_ARCHIVED_DESC">
+			<option value="-1">MOD_EVENTLIST_UPCOMING_EVENTS</option>
+			<option value="0">MOD_EVENTLIST_PUBLISHED_EVENTS</option>
+			<option value="1">MOD_EVENTLIST_ARCHIVED_EVENTS</option>
+		</field>
+		<field name="showtitloc" type="list" default="0" label="MOD_EVENTLIST_TITLE_OR_VENUE" description="MOD_EVENTLIST_TITLE_OR_VENUE_DESC">
+			<option value="0">MOD_EVENTLIST_VENUE</option>
+			<option value="1">MOD_EVENTLIST_TITLE</option>
+		</field>
+		<field name="cuttitle" type="text" default="18" label="MOD_EVENTLIST_MAX_TITLE_LENGTH" description="MOD_EVENTLIST_MAX_TITLE_LENGTH_DESC" />
+		<field name="linkloc" type="radio" default="1" label="MOD_EVENTLIST_LINK_TO_VENUE" description="MOD_EVENTLIST_LINK_TO_VENUE_DESC">
+			<option value="0">MOD_EVENTLIST_NO</option>
+			<option value="1">MOD_EVENTLIST_YES</option>
+		</field>
+		<field name="linkdet" type="list" default="1" label="MOD_EVENTLIST_LINK_TO_DETAILS" description="MOD_EVENTLIST_LINK_TO_DETAILS_DESC">
+			<option value="0">MOD_EVENTLIST_NO</option>
+			<option value="1">MOD_EVENTLIST_DATE</option>
+			<option value="2">MOD_EVENTLIST_TITLE</option>
+		</field>
+		<field name="catid" type="text" default="" label="MOD_EVENTLIST_CATEGORY_ID" description="MOD_EVENTLIST_CATEGORY_ID_DESC" />
+		<field name="venid" type="text" default="" label="MOD_EVENTLIST_VENUE_ID" description="MOD_EVENTLIST_VENUE_ID_DESC" />
+		<field name="formatdate" type="text" default="%d.%m.%Y" label="MOD_EVENTLIST_DATE_FORMAT" description="MOD_EVENTLIST_DATE_FORMAT_DESC" />
+		<field name="formattime" type="text" default="%H.%M" label="TIME FORMAT" description="TIME FORMAT DESC" />
+		<field name="moduleclass_sfx" type="text" default="" label="MOD_EVENTLIST_MODULE_CLASS_SUFFIX" description="MOD_EVENTLIST_MODULE_CLASS_SUFFIX_DESC" />
+	</fieldset>
+
+	<fieldset name="advanced">
+		<field name="cache" type="list" default="1" label="MOD_EVENTLIST_CACHING" description="MOD_EVENTLIST_CACHING_DESC">
+			<option value="1">MOD_EVENTLIST_USE_GLOBAL</option>
+			<option value="0">MOD_EVENTLIST_NO_CACHING</option>
+		</field>
+		<field name="cache_time" type="text" default="900" label="MOD_EVENTLIST_CACHE_TIME" description="MOD_EVENTLIST_CACHE_TIME_DESC" />
+	</fieldset>
+   </fields>
+   </config>
+</extension>

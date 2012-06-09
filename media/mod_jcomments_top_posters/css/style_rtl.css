@@ -1,0 +1,55 @@
+ul.jcomments-top-posters {
+	padding: 0;
+	list-style: none;
+	list-style-image: none;
+	list-style-type: none;
+}
+
+ul.jcomments-top-posters li {
+	background-image: none;
+	margin: 0;
+	display: block;
+	overflow: hidden;
+}
+
+ul.jcomments-top-posters img {
+	width: 32px;
+	height: 32px;
+	margin: 5px;
+	float: right;
+}
+
+ul.jcomments-top-posters .user {
+	margin: 5px;
+}
+
+ul.jcomments-top-posters .avatar-indent {
+	margin-right: 36px !important;
+}
+
+ul.jcomments-top-posters .odd {
+	background-color: #F4F4F4;
+}
+
+ul.jcomments-top-posters .even {
+	background-color: transparent;
+}
+
+ul.jcomments-top-posters .votes {
+	font: bold 0.8em Verdana, Arial, Sans-Serif;
+	color: #A9A9A9;
+	margin: 0;
+	padding: 0;
+}
+
+ul.jcomments-top-posters .vote-none {
+	color: #A9A9A9;
+}
+
+ul.jcomments-top-posters .vote-good {
+	color: #339900;
+}
+
+ul.jcomments-top-posters .vote-poor {
+	color: #CC0000;
+}

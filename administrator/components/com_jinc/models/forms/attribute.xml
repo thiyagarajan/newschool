@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field name="id" type="hidden" Default="0" label="JGLOBAL_FIELD_ID_LABEL"
+             readonly="true" class="readonly" hidden="true" />
+
+        <field name="name" type="text" class="inputbox" size="50"
+            label="COM_JINC_ATTR_NAME" description="COM_JINC_ATTR_NAME_DESC"
+            required="true" onchange="javascript:attrName_OnChange();" />
+
+        <field name="name_i18n" type="text" class="inputbox" size="50"
+            label="COM_JINC_ATTR_NAME_I18N" description="COM_JINC_ATTR_NAME_I18N_DESC"
+            required="true" />
+
+        <field name="type" type="list" label="COM_JINC_ATTR_TYPE"
+                description="COM_JINC_ATTR_TYPE_DESC" Default="0">
+            <option value="0">COM_JINC_ATTRIBUTE_TYPE_0</option>
+            <option value="1">COM_JINC_ATTRIBUTE_TYPE_1</option>
+            <option value="2">COM_JINC_ATTRIBUTE_TYPE_2</option>
+        </field>
+
+        <field name="description" type="text" class="inputbox" size="50"
+            label="COM_JINC_ATTR_DESCRIPTION" description="COM_JINC_ATTR_DESCRIPTION_DESC"
+            required="true" />
+
+    </fieldset>
+</form>

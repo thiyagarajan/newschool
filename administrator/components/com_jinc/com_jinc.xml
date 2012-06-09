@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+    <name>com_jinc</name>
+    <author>lhacky</author>
+    <authorEmail>lhacky@altervista.org</authorEmail>
+    <authorUrl>http://lhacky.altervista.org/jextensions</authorUrl>
+    <creationDate>March 2012</creationDate>
+    <copyright>Copyright (C) 2010 - Lhacky</copyright>
+    <license>GNU/GPL http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <version>0.9.7</version>
+    <description>
+        <![CDATA[
+                <p><h2>JINC: Joomla! Integrated Newsletter Component</h2></p>
+                <div style="float:left; margin:10px;">
+                    <img src="components/com_jinc/assets/images/icons/icon-120-jinc.png" alt="http://lhacky.altervista.org/jextensions/"  />
+                </div>
+                <p>
+                    Continue to be in touch with your users through newsletters using JINC !!!
+                </p>
+                <p>
+                    For news and documentation: <a target="_blank" href="http://lhacky.altervista.org/jextensions/">Lhacky! Extensions Website</a>
+                </p>
+                <p>
+                    For support write down to our forum: <a target="_blank" href="http://lhacky.altervista.org/jextensions/index.php?option=com_ccboard&view=forumlist&Itemid=31">Lhacky! Extensions Forum</a>
+                </p>
+                <p>Begin to work with JINC: <a href="index.php?option=com_jinc">JINC Administration</a></p>
+                <p>Loading sample data: <a href="index.php?option=com_jinc&task=tools.loadSampleData">Loading sample data</a></p>
+
+                ]]>
+    </description>
+
+    <scriptfile>install/install.php</scriptfile>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">install/install.sql</file>
+            <file driver="mysql">install/install.sql</file>
+        </sql>
+    </install>
+
+    <uninstall>
+    </uninstall>
+
+    <administration>
+        <menu img="components/com_jinc/assets/images/icons/icon-16-jinc.png">COM_JINC</menu>
+        <!-- Sub Menu Section -->
+        <submenu>
+            <menu view="newsletters" img="components/com_jinc/assets/images/icons/icon-16-newsletter.png">COM_JINC_NEWSLETTERS</menu>
+            <menu view="notices" img="components/com_jinc/assets/images/icons/icon-16-notices.png">COM_JINC_NOTICES</menu>
+            <menu controller="message" view="messages" img="components/com_jinc/assets/images/icons/icon-16-message.png">COM_JINC_MESSAGES</menu>
+            <menu view="templates" img="components/com_jinc/assets/images/icons/icon-16-template.png">COM_JINC_TEMPLATES</menu>
+            <menu controller="subscriber" view="subscribers" img="components/com_jinc/assets/images/icons/icon-16-subscribers.png">COM_JINC_SUBSCRIBERS</menu>
+            <menu view="tools" img="components/com_jinc/assets/images/icons/icon-16-tools.png">COM_JINC_TOOLS</menu>
+        </submenu>
+
+        <!-- Administration Main File Copy Section -->
+        <files folder="admin">
+            <folder>assets</folder>
+            <folder>classes</folder>
+            <folder>controllers</folder>
+            <folder>elements</folder>
+            <folder>install</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>jinc.php</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+        </files>
+        <languages>
+            <language tag="en-GB">admin/language/en-GB/en-GB.com_jinc.ini</language>
+            <language tag="en-GB">admin/language/en-GB/en-GB.com_jinc.sys.ini</language>
+            <language tag="it-IT">admin/language/it-IT/it-IT.com_jinc.ini</language>
+            <language tag="it-IT">admin/language/it-IT/it-IT.com_jinc.sys.ini</language>
+            <language tag="sv-SE">admin/language/sv-SE/sv-SE.com_jinc.ini</language>
+            <language tag="sv-SE">admin/language/sv-SE/sv-SE.com_jinc.sys.ini</language>
+            <language tag="hu-HU">admin/language/hu-HU/hu-HU.com_jinc.ini</language>
+            <language tag="hu-HU">admin/language/hu-HU/hu-HU.com_jinc.sys.ini</language>
+            <language tag="de-DE">admin/language/de-DE/de-DE.com_jinc.ini</language>
+            <language tag="de-DE">admin/language/de-DE/de-DE.com_jinc.sys.ini</language>                        
+        </languages>
+    </administration>
+
+    <files folder="site">
+        <folder>assets</folder>
+        <folder>controllers</folder>
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>jinc.php</filename>
+        <folder>models</folder>
+        <folder>views</folder>
+        <folder>securimage</folder>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB.com_jinc.ini</language>
+        <language tag="it-IT">it-IT.com_jinc.ini</language>
+        <language tag="fr-FR">fr-FR.com_jinc.ini</language>
+        <language tag="es-ES">es-ES.com_jinc.ini</language>
+        <language tag="de-DE">de-DE.com_jinc.ini</language>
+        <language tag="nl-NL">nl-NL.com_jinc.ini</language>
+        <language tag="pt-PT">pt-PT.com_jinc.ini</language>
+        <language tag="sv-SE">sv-SE.com_jinc.ini</language>
+        <language tag="hu-HU">hu-HU.com_jinc.ini</language>
+	<language tag="el-GR">el-GR.com_jinc.ini</language>
+    </languages>
+
+    <modules>
+        <module module="mod_jinc_news_access" name="COM_JINC_MOD_NEWS_ACCESS" title="JINC Newsletter Access" position="position-7" order="-1" client="site" published="true">
+            <files folder="mod_jinc_news_access">
+                <filename>index.html</filename>
+                <filename>mod_jinc_news_access.php</filename>
+                <filename>mod_jinc_news_access.xml</filename>
+            </files>
+            <params>
+                <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+            </params>
+            <languages folder="mod_jinc_news_access/language">
+                <language tag="en-GB">en-GB.mod_jinc_news_access.sys.ini</language>
+                <language tag="it-IT">it-IT.mod_jinc_news_access.sys.ini</language>
+                <language tag="sv-SE">sv-SE.mod_jinc_news_access.sys.ini</language>                
+                <language tag="hu-HU">hu-HU.mod_jinc_news_access.sys.ini</language>
+                <language tag="de-DE">de-DE.mod_jinc_news_access.sys.ini</language>                                 
+            </languages>
+            <media />
+        </module>
+        
+        <module module="mod_jinc_subscription" name="COM_JINC_MOD_SUBSCRIPTION" title="JINC Newsletter Subscription" position="position-7" order="-1" client="site" published="true">
+            <files folder="mod_jinc_subscription">
+                <filename>index.html</filename>
+                <filename>mod_jinc_subscription.php</filename>
+                <filename>mod_jinc_subscription.xml</filename>
+                <filename>tmpl/index.html</filename>
+                <filename>tmpl/default.php</filename>
+            </files>
+            <params addpath="/administrator/components/com_jinc/elements">
+                <param name="news_id" type="newsletter" section="com_jinc" default="0" label="CONFIG_SELECT_NEWSLETTER" description="CONFIG_SELECT_NEWSLETTER_DESC" />
+                <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+            </params>
+            <languages folder="mod_jinc_subscription/language">
+                <language tag="de-DE">de-DE.mod_jinc_subscription.ini</language>
+                <language tag="de-DE">de-DE.mod_jinc_subscription.sys.ini</language>
+                <language tag="en-GB">en-GB.mod_jinc_subscription.ini</language>
+                <language tag="en-GB">en-GB.mod_jinc_subscription.sys.ini</language>
+                <language tag="es-ES">es-ES.mod_jinc_subscription.ini</language>
+                <language tag="es-ES">es-ES.mod_jinc_subscription.sys.ini</language>
+                <language tag="fr-FR">fr-FR.mod_jinc_subscription.ini</language>
+                <language tag="fr-FR">fr-FR.mod_jinc_subscription.sys.ini</language>
+                <language tag="it-IT">it-IT.mod_jinc_subscription.ini</language>
+                <language tag="it-IT">it-IT.mod_jinc_subscription.sys.ini</language>
+                <language tag="nl-NL">nl-NL.mod_jinc_subscription.ini</language>
+                <language tag="nl-NL">nl-NL.mod_jinc_subscription.sys.ini</language>
+                <language tag="pt-PT">pt-PT.mod_jinc_subscription.ini</language>
+                <language tag="pt-PT">pt-PT.mod_jinc_subscription.sys.ini</language>
+                <language tag="sv-SE">sv-SE.mod_jinc_subscription.ini</language>
+                <language tag="sv-SE">sv-SE.mod_jinc_subscription.sys.ini</language>
+                <language tag="hu-HU">hu-HU.mod_jinc_subscription.ini</language>
+                <language tag="hu-HU">hu-HU.mod_jinc_subscription.sys.ini</language>
+            </languages>
+            <media />
+        </module>
+
+        <module module="mod_jinc_multisubscription" name="COM_JINC_MOD_MULTISUBSCRIPTION" title="JINC Newsletter Multi Subscription" position="position-7" order="-1" client="site" published="true">
+            <files folder="mod_jinc_multisubscription">
+                <filename>index.html</filename>
+                <filename>mod_jinc_multisubscription.php</filename>
+                <filename>mod_jinc_multisubscription.xml</filename>
+                <filename>tmpl/index.html</filename>
+                <filename>tmpl/default.php</filename>
+            </files>
+            <params addpath="/administrator/components/com_jinc/elements">
+                <param name="news_id" type="newsletter" section="com_jinc" default="0" label="CONFIG_SELECT_NEWSLETTER" description="CONFIG_SELECT_NEWSLETTER_DESC" />
+                <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+            </params>
+            <languages folder="mod_jinc_multisubscription/language">
+                <language tag="de-DE">de-DE.mod_jinc_multisubscription.ini</language>
+                <language tag="de-DE">de-DE.mod_jinc_multisubscription.sys.ini</language>
+                <language tag="en-GB">en-GB.mod_jinc_multisubscription.ini</language>
+                <language tag="en-GB">en-GB.mod_jinc_multisubscription.sys.ini</language>
+                <language tag="es-ES">es-ES.mod_jinc_multisubscription.ini</language>
+                <language tag="es-ES">es-ES.mod_jinc_multisubscription.sys.ini</language>
+                <language tag="fr-FR">fr-FR.mod_jinc_multisubscription.ini</language>
+                <language tag="fr-FR">fr-FR.mod_jinc_multisubscription.sys.ini</language>
+                <language tag="it-IT">it-IT.mod_jinc_multisubscription.ini</language>
+                <language tag="it-IT">it-IT.mod_jinc_multisubscription.sys.ini</language>
+                <language tag="nl-NL">nl-NL.mod_jinc_multisubscription.ini</language>
+                <language tag="nl-NL">nl-NL.mod_jinc_multisubscription.sys.ini</language>
+                <language tag="pt-PT">pt-PT.mod_jinc_multisubscription.ini</language>
+                <language tag="pt-PT">pt-PT.mod_jinc_multisubscription.sys.ini</language>
+                <language tag="sv-SE">sv-SE.mod_jinc_multisubscription.ini</language>
+                <language tag="sv-SE">sv-SE.mod_jinc_multisubscription.sys.ini</language>
+                <language tag="hu-HU">hu-HU.mod_jinc_multisubscription.ini</language>
+                <language tag="hu-HU">hu-HU.mod_jinc_multisubscription.sys.ini</language>
+            </languages>
+            <media />
+        </module>
+
+    </modules>
+
+    <plugins>
+        <plugin plugin="JINCSubscription" order="0" group="user">
+            <files folder="plg_jinc_subscription">
+                <file>JINCSubscription.php</file>
+                <file>JINCSubscription.xml</file>
+            </files>
+            <languages folder="plg_jinc_subscription">
+                <language tag="de-DE">language/de-DE.plg_jinc_subscription.ini</language>
+                <language tag="en-GB">language/en-GB.plg_jinc_subscription.ini</language>
+                <language tag="es-ES">language/es-ES.plg_jinc_subscription.ini</language>
+                <language tag="fr-FR">language/fr-FR.plg_jinc_subscription.ini</language>
+                <language tag="it-IT">language/it-IT.plg_jinc_subscription.ini</language>
+                <language tag="nl-NL">language/nl-NL.plg_jinc_subscription.ini</language>
+                <language tag="pt-PT">language/pt-PT.plg_jinc_subscription.ini</language>
+                <language tag="sv-SE">language/sv-SE.plg_jinc_subscription.ini</language>
+                <language tag="hu-HU">language/hu-HU.plg_jinc_subscription.ini</language>
+            </languages>
+            <media />
+        </plugin>
+    </plugins>
+</extension>

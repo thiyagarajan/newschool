@@ -1,0 +1,221 @@
+.jinc_error {
+    border-bottom-style: solid;
+    border-bottom-color: red;
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-top-color: red;
+    border-top-width: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.jinc_caption {
+    border-bottom-style: solid;
+    border-bottom-color: red;
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-top-color: red;
+    border-top-width: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    font: italic bold 14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.jinc_description {
+    background: #FFF repeat-x scroll center left;
+    border-bottom: 1px solid #FF0000;
+    border-top: 1px solid #FF0000;
+    font: normal normal 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.jinc_commands {
+    display: inline;
+    float: right;
+    font: normal bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    background: url(red/icon_subscribe) no-repeat;
+}
+
+#jinc_msgbox {
+    margin-top: 20px;
+    background: url(red/msgbox_left.png) no-repeat;
+}
+
+#jinc_msgbox .top {
+    background: url(red/msgbox_top.png) no-repeat top right;
+    margin-left: 20px;
+}
+
+#jinc_msgbox .content {
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 22px;
+    position: relative;
+}
+
+#jinc_msgbox .bottom {
+    height: 10px;
+    background: url(red/msgbox_bottom.png) no-repeat bottom right;
+    position: relative;
+    top: 10px;
+}
+
+#jinc_msgbox .leftbottom {
+    height: 10px;
+    width: 35px;
+    margin-left: -20px;
+    margin-bottom: -10px;
+    background: url(red/msgbox_bottom.png) no-repeat top left;
+    position: relative;
+}
+
+.jinc_msgsubject {
+    background: #FFF repeat-x scroll center left;
+    border-bottom: 0px solid #CCC;
+    border-top: 0px solid #CCC;
+    font: normal bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding-top: 0px;
+    margin-bottom: 15px;
+}
+
+.jinc_msgbody {
+    background: #FFF repeat-x scroll center left;
+    font: normal normal 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.jinc_msgattachment {
+    background: #FFF repeat-x scroll center left;
+    border-bottom: 1px solid #FF0000;
+    border-top: 1px solid #FF0000;
+    font: normal normal 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.jinc_mod_frm_subscription {
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    padding: 5px 5px 5px 5px;
+}
+
+.jinc_frm_subscription {
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 30em;
+    text-align: center;
+    border-color: rgb(0,0,0);
+    border-style: dotted dotted dotted dotted;
+    border-width: 1px 1px 1px 1px;
+    padding: 20px 20px 20px 20px;
+}
+
+.jinc_frm_subscription input.btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    color:rgb(101,101,101);
+    font: bold 100% 'trebuchet ms',helvetica,sans-serif;
+    background-color: #FFD2C6;
+    border:1px solid;
+    border-color: rgb(101,101,101) rgb(101,101,101) rgb(101,101,101) rgb(101,101,101);
+    padding: 1px 12px 1px 12px;
+}
+
+.jinc_mod_frm_subscription input.btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    color:rgb(101,101,101);
+    font: bold 100% 'trebuchet ms',helvetica,sans-serif;
+    background-color: #FFD2C6;
+    border:1px solid;
+    border-color: rgb(101,101,101) rgb(101,101,101) rgb(101,101,101) rgb(101,101,101);
+    padding: 1px 12px 1px 12px;
+}
+
+.jinc_notice {
+    padding-top: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 15px;
+}
+
+.jinc_minimal_unfocused {
+    color: silver;
+    font-style: italic;
+}
+
+.jinc_minimal_focused {
+    color: black;
+    font-style: normal;
+}
+
+.jinc_msg_title, .jinc_err_msg_title {
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: red;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: red;
+    border-bottom-width: 2px;    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    font: italic bold 14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.jinc_msg_subtitle, .jinc_err_msg_subtitle {
+    border-top-style: solid;
+    border-top-color: red;
+    border-top-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: red;
+    border-bottom-width: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+    margin-bottom: 5px;
+    font: italic bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.jinc_msg_text, .jinc_err_msg_text {
+    border-top-style: solid;
+    border-top-color: red;
+    border-top-width: 1px;    
+    border-bottom-style: solid;
+    border-bottom-color: red;
+    border-bottom-width: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+    margin-bottom: 10px;
+    font: normal medium 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.jinc_err_msg_text {    
+    font-weight: bold;    
+}

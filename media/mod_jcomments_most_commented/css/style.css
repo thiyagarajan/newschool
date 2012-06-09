@@ -1,0 +1,12 @@
+ul.jcomments-most-commented {
+	list-style: none !important;
+	list-style-image: none !important;
+	padding: 0;
+}
+
+ul.jcomments-most-commented li {
+	background-image: none;
+	margin: 0;
+	display: block;
+	overflow: hidden;
+}

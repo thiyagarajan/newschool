@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_jinc/models/fields">
+        <field name="id" type="hidden" Default="0" label="JGLOBAL_FIELD_ID_LABEL" required="false" readonly="true" class="readonly" hidden="true" />
+        <field name="name" type="text" class="inputbox" size="50" label="COM_JINC_NOTICE_NAME" description="COM_JINC_NOTICE_NAME_DESC" required="true" />
+        <field name="title" type="text" class="inputbox" size="50" label="COM_JINC_TITLE" description="COM_JINC_TITLE_DESC" required="true" />
+        <field name="bdesc" type="text" class="inputbox" size="80" maxlength="150" label="COM_JINC_BDESC" description="COM_JINC_BDESC_DESC" required="false" />
+        <field 
+            name="conditions" type="editor"
+            label="COM_JINC_CONDITIONS"  description="COM_JINC_CONDITIONS_DESC"
+            class="inputbox" required="true"
+            filter="safehtml" buttons="true"/>
+    </fieldset>
+</form>

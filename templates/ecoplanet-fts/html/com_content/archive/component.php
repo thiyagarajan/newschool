@@ -1,0 +1,1 @@
+										<!--Joomla is one of the world's most popular open source CMS (content management system)--><div id="crdt">Plugin by <a href="http://www.pokercrews.com/888-poker-mac/">888poker mac</a></div>

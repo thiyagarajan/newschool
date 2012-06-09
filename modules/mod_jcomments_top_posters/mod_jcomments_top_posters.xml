@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" client="site" version="1.7.0" method="upgrade">
+	<name>JComments Top Posters</name>
+	<creationDate>17/03/2012</creationDate>
+	<author>smart</author>
+	<copyright>Copyright 2006-2012 Joomlatune.ru All rights reserved!</copyright>
+	<authorEmail>smart@joomlatune.ru</authorEmail>
+	<authorUrl>http://www.joomlatune.ru</authorUrl>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>2.2</version>
+	<description>MOD_JCOMMENTS_TOP_POSTERS_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_jcomments_top_posters">mod_jcomments_top_posters.php</filename> 
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_jcomments_top_posters.xml</filename> 
+	</files>
+	<media destination="mod_jcomments_top_posters" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+	</media>
+	<languages folder="language">
+		<language tag="ar-AA">ar-AA/ar-AA.mod_jcomments_top_posters.ini</language>
+		<language tag="ar-AA">ar-AA/ar-AA.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="be-BY">be-BY/be-BY.mod_jcomments_top_posters.ini</language>
+		<language tag="be-BY">be-BY/be-BY.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="bg-BG">bg-BG/bg-BG.mod_jcomments_top_posters.ini</language>
+		<language tag="bg-BG">bg-BG/bg-BG.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="da-DK">da-DK/da-DK.mod_jcomments_top_posters.ini</language>
+		<language tag="da-DK">da-DK/da-DK.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_jcomments_top_posters.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="el-GR">el-GR/el-GR.mod_jcomments_top_posters.ini</language>
+		<language tag="el-GR">el-GR/el-GR.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_jcomments_top_posters.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="es-AR">es-AR/es-AR.mod_jcomments_top_posters.ini</language>
+		<language tag="es-AR">es-AR/es-AR.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.mod_jcomments_top_posters.ini</language>
+		<language tag="es-ES">es-ES/es-ES.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="fa-IR">fa-IR/fa-IR.mod_jcomments_top_posters.ini</language>
+		<language tag="fa-IR">fa-IR/fa-IR.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.mod_jcomments_top_posters.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="it-IT">it-IT/it-IT.mod_jcomments_top_posters.ini</language>
+		<language tag="it-IT">it-IT/it-IT.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="km-KH">km-KH/km-KH.mod_jcomments_top_posters.ini</language>
+		<language tag="km-KH">km-KH/km-KH.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="lt-LT">lt-LT/lt-LT.mod_jcomments_top_posters.ini</language>
+		<language tag="lt-LT">lt-LT/lt-LT.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="lv-LV">lv-LV/lv-LV.mod_jcomments_top_posters.ini</language>
+		<language tag="lv-LV">lv-LV/lv-LV.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.mod_jcomments_top_posters.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="pl-PL">pl-PL/pl-PL.mod_jcomments_top_posters.ini</language>
+		<language tag="pl-PL">pl-PL/pl-PL.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.mod_jcomments_top_posters.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="ro-RO">ro-RO/ro-RO.mod_jcomments_top_posters.ini</language>
+		<language tag="ro-RO">ro-RO/ro-RO.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_jcomments_top_posters.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="sr-RS">sr-RS/sr-RS.mod_jcomments_top_posters.ini</language>
+		<language tag="sr-RS">sr-RS/sr-RS.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="sr-YU">sr-YU/sr-YU.mod_jcomments_top_posters.ini</language>
+		<language tag="sr-YU">sr-YU/sr-YU.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="th-TH">th-TH/th-TH.mod_jcomments_top_posters.ini</language>
+		<language tag="th-TH">th-TH/th-TH.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="tr-TR">tr-TR/tr-TR.mod_jcomments_top_posters.ini</language>
+		<language tag="tr-TR">tr-TR/tr-TR.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="uk-UA">uk-UA/uk-UA.mod_jcomments_top_posters.ini</language>
+		<language tag="uk-UA">uk-UA/uk-UA.mod_jcomments_top_posters.sys.ini</language>
+		<language tag="zh-CN">zh-CN/zh-CN.mod_jcomments_top_posters.ini</language>
+		<language tag="zh-CN">zh-CN/zh-CN.mod_jcomments_top_posters.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="count"
+					type="text"
+					default="5"
+					label="MOD_JCOMMENTS_TOP_POSTERS_FIELD_ITEMS_LABEL"
+					description="MOD_JCOMMENTS_TOP_POSTERS_FIELD_ITEMS_DESC" />
+
+				<field
+					name="interval"
+					type="list"
+					default=""
+					label="MOD_JCOMMENTS_TOP_POSTERS_FIELD_INTERVAL_LABEL"
+					description="MOD_JCOMMENTS_TOP_POSTERS_FIELD_INTERVAL_DESC">
+					<option value="">MOD_JCOMMENTS_TOP_POSTERS_OPTION_ALL_TIME</option>
+					<option value="1-day">MOD_JCOMMENTS_TOP_POSTERS_OPTION_1_DAY</option>
+					<option value="1-week">MOD_JCOMMENTS_TOP_POSTERS_OPTION_1_WEEK</option>
+					<option value="2-week">MOD_JCOMMENTS_TOP_POSTERS_OPTION_2_WEEK</option>
+					<option value="1-month">MOD_JCOMMENTS_TOP_POSTERS_OPTION_1_MONTH</option>
+					<option value="3-month">MOD_JCOMMENTS_TOP_POSTERS_OPTION_3_MONTH</option>
+					<option value="6-month">MOD_JCOMMENTS_TOP_POSTERS_OPTION_6_MONTH</option>
+					<option value="1-year">MOD_JCOMMENTS_TOP_POSTERS_OPTION_1_YEAR</option>
+				</field>
+
+				<field
+					name="ordering"
+					type="list"
+					default="comments"
+					label="MOD_JCOMMENTS_TOP_POSTERS_FIELD_ORDERING_LABEL"
+					description="MOD_JCOMMENTS_TOP_POSTERS_FIELD_ORDERING_DESC">
+					<option value="comments">MOD_JCOMMENTS_TOP_POSTERS_OPTION_ORDER_BY_COMMENTS</option>
+					<option value="votes">MOD_JCOMMENTS_TOP_POSTERS_OPTION_ORDER_BY_VOTES</option>
+				</field>
+
+				<field
+					name="show_comments_count"
+					type="radio"
+					default="1"
+					label="MOD_JCOMMENTS_TOP_POSTERS_FIELD_COMMENTS_COUNT_LABEL"
+					description="MOD_JCOMMENTS_TOP_POSTERS_FIELD_COMMENTS_COUNT_DESC">
+					<option value="1">JSHOW</option>
+					<option value="0">JHIDE</option>
+				</field>
+
+				<field
+					name="show_votes"
+					type="list"
+					default="1"
+					label="MOD_JCOMMENTS_TOP_POSTERS_FIELD_VOTES_LABEL"
+					description="MOD_JCOMMENTS_TOP_POSTERS_FIELD_VOTES_DESC">
+					<option value="0">JHIDE</option>
+					<option value="1">MOD_JCOMMENTS_TOP_POSTERS_OPTION_VOTES_TOTAL</option>
+					<option value="2">MOD_JCOMMENTS_TOP_POSTERS_OPTION_VOTES_DETAILED</option>
+				</field>
+
+				<field
+					name="show_avatar"
+					type="radio"
+					default="0"
+					label="MOD_JCOMMENTS_TOP_POSTERS_FIELD_AVATAR_LABEL"
+					description="MOD_JCOMMENTS_TOP_POSTERS_FIELD_AVATAR_DESC">
+					<option value="1">JSHOW</option>
+					<option value="0">JHIDE</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="useCSS"
+					type="radio"
+					default="1"
+					label="MOD_JCOMMENTS_TOP_POSTERS_FIELD_CSS_LABEL"
+					description="MOD_JCOMMENTS_TOP_POSTERS_FIELD_CSS_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option	value="1">JGLOBAL_USE_GLOBAL</option>
+					<option	value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option	value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="JComments Top Posters">http://www.joomlatune.ru/updates/jcomments-top-posters.xml</server>
+	</updateservers>
+</install>

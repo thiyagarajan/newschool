@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fields addfieldpath="/administrator/components/com_jinc/models/fields">
+        <fieldset name="general" label="COM_JINC_CONFIG_GENERAL" description="COM_JINC_CONFIG_GENERAL_DESC">
+            <field name="mail_x_step" type="text" default="1"
+            label="COM_JINC_CONFIG_MAIL_X_STEP" description="COM_JINC_CONFIG_MAIL_X_STEP_DESC">
+            </field>
+            <field name="mail_time_interval" type="text" default="500" label="COM_JINC_CONFIG_MAIL_TIME_INTERVAL" description="COM_JINC_CONFIG_MAIL_TIME_INTERVAL_DESC"></field>
+            <field name="mail_max_bcc" type="text" default="50" label="COM_JINC_CONFIG_MAIL_MAX_BCC" description="COM_JINC_CONFIG_MAIL_MAX_BCC_DESC"></field>
+            <field name="send_mail" type="radio" default="1" label="COM_JINC_CONFIG_SEND_MAIL" description="COM_JINC_CONFIG_SEND_MAIL_DESC">
+                <option value="1">COM_JINC_CONFIG_SEND_MAIL_YES</option>
+                <option value="0">COM_JINC_CONFIG_SEND_MAIL_NO</option>
+            </field>
+            <field name="log_level" type="list" default="3" label="COM_JINC_CONFIG_LOG_LEVEL" description="COM_JINC_CONFIG_LOG_LEVEL_DESC">
+                <option value="0">COM_JINC_CONFIG_DEBUG</option>
+                <option value="1">COM_JINC_CONFIG_FINER</option>
+                <option value="2">COM_JINC_CONFIG_FINE</option>
+                <option value="3">COM_JINC_CONFIG_INFO</option>
+                <option value="4">COM_JINC_CONFIG_WARNING</option>
+                <option value="5">COM_JINC_CONFIG_SEVERE</option>
+            </field>
+            <field name="hints" type="radio" default="1" label="COM_JINC_CONFIG_HINTS_ONOFF" description="COM_JINC_CONFIG_HINTS_ONOFF_DESC">
+                <option value="1">YES</option>
+                <option value="0">NO</option>
+            </field>
+            <field name="chart_system" type="radio" default="0" label="COM_JINC_CONFIG_CHART_SYSTEM" description="COM_JINC_CONFIG_CHART_SYSTEM_DESC">
+                <option value="0">COM_JINC_CONFIG_CHART_SYSTEM_OPENFLASH</option>
+                <option value="1">COM_JINC_CONFIG_CHART_SYSTEM_BUILTIN</option>
+            </field>
+        </fieldset>
+
+        <fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+            <field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL"
+            class="inputbox" validate="rules" filter="rules" component="com_jinc"
+            section="component" />
+        </fieldset>
+    </fields>
+</config>

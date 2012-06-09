@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_jinc/models/fields">
+        <field name="id" type="hidden" default="0" label="JGLOBAL_FIELD_ID_LABEL"
+             readonly="true" class="readonly" hidden="true" />
+
+        <field name="asset_id" type="hidden" filter="unset"/>
+
+        <field name="name" type="text" class="inputbox" size="50"
+            label="COM_JINC_NEWS_NAME" description="COM_JINC_NEWS_NAME_DESC"
+            required="true" />
+
+        <field name="type" type="list" label="COM_JINC_NEWS_TYPE" 
+            description="COM_JINC_NEWS_TYPE_DESC" class="inputbox"
+            size="1" default="0" onchange="onChangeType();">
+            <option value="2">COM_JINC_PRIVATE</option>
+            <option value="0">COM_JINC_PUBLIC</option>
+        </field>
+
+        <field name="on_subscription" type="list" label="COM_JINC_ON_SUBSCRIPTION"
+            description="COM_JINC_ON_SUBSCRIPTION_DESC" class="inputbox"
+            size="1" default="0">
+            <option value="0">COM_JINC_NO</option>
+            <option value="1">COM_JINC_YES</option>
+        </field>
+
+        <field name="jcontact_enabled" type="list" label="COM_JINC_JCONTACT_ENABLED"
+            description="COM_JINC_JCONTACT_ENABLED_DESC" class="inputbox"
+            size="1" default="0">
+            <option value="0">COM_JINC_NO</option>
+            <option value="1">COM_JINC_YES</option>
+        </field>
+
+        <field name="notify" type="list" label="COM_JINC_NOTIFY"
+            description="COM_JINC_NOTIFY_DESC" class="inputbox"
+            size="1" default="0">
+            <option value="0">COM_JINC_NO</option>
+            <option value="1">COM_JINC_YES</option>
+        </field>
+
+        <field name="default_template" type="JINCTemplate" 
+            label="COM_JINC_DEF_TEMPLATE"  description="COM_JINC_DEF_TEMPLATE_DESC"
+            class="inputbox" />
+
+        <field name="description" type="editor" buttons="true"
+            hide="article,pagebreak,readmore" class="inputbox"
+            label="COM_JINC_NEWS_DESCRIPTION" description="COM_JINC_NEWS_DESCRIPTION_DESC"
+            filter="safehtml" />
+
+        <field name="welcome_subject" type="text" class="inputbox" size="50"
+            label="COM_JINC_WELCOME_SUBJECT" description="COM_JINC_WELCOME_SUBJECT_DESC" />
+
+        <field name="welcome" type="editor" buttons="true" 
+            hide="article,pagebreak,readmore" class="inputbox"
+            label="COM_JINC_WELCOME" description="COM_JINC_WELCOME_DESC"
+            filter="safehtml"/>
+
+        <field name="disclaimer" type="editor" buttons="true"
+            hide="article,pagebreak,readmore" class="inputbox"
+            label="COM_JINC_DISCLAIMER" description="COM_JINC_DISCLAIMER_DESC"
+            filter="safehtml" />
+
+        <field name="rules" type="rules" label="JFIELD_RULES_LABEL"
+            translate_label="false" class="inputbox" filter="rules"
+            component="com_jinc" section="newsletter" validate="rules" />
+
+    </fieldset>
+
+    <fieldset name="addresses" label="COM_JINC_ADDRESSES" >
+        <field name="sendername" type="text" class="inputbox" size="40" 
+            label="COM_JINC_SENDER" description="COM_JINC_SENDER_DESC" />
+
+        <field name="senderaddr" type="text" class="inputbox" size="40" 
+            label="COM_JINC_SENDERMAIL" description="COM_JINC_SENDERMAIL_DESC" />
+        
+        <field name="replyto_name" type="text" class="inputbox" size="40"
+            label="COM_JINC_REPLYTO" description="COM_JINC_REPLYTO_DESC" />
+
+        <field name="replyto_addr" type="text" class="inputbox" size="40" 
+            label="COM_JINC_REPLYTOMAIL" description="COM_JINC_REPLYTOMAIL_DESC" />
+    </fieldset>
+
+    <fieldset name="frontend" label="COM_JINC_FRONTEND" >
+        <field name="front_theme" type="JINCTheme" label="COM_JINC_THEME"
+            description="COM_JINC_THEME_DESC" class="inputbox" />
+
+        <field name="front_max_msg" type="text" class="inputbox" size="3"
+            label="COM_JINC_MAX_MSG_DESC" description="TT_NEWS_MAX_MSG" />
+
+        <field name="front_type" type="list" label="COM_JINC_FRONT_TYPE" 
+            description="COM_JINC_FRONT_TYPE_DESC" class="inputbox" size="1"
+            default="1">
+            <option value="0">COM_JINC_ONLY_TITLE</option>
+            <option value="1">COM_JINC_CLICKABLE_TITLE</option>
+            <option value="2">COM_JINC_ENTIRE_MESSAGE</option>
+        </field>
+
+        <field name="input_style" type="list" label="COM_JINC_INPUT_STYLE"
+            description="COM_JINC_INPUT_STYLE_DESC" class="inputbox"
+            size="1" default="1">
+            <option value="1">COM_JINC_INPUT_STYLE_STANDARD</option>
+            <option value="2">COM_JINC_INPUT_STYLE_MINIMAL</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="security" label="COM_JINC_SECURITY" >
+        <field name="notice_id" type="JINCNotice" label="COM_JINC_NOTICE"
+            description="COM_JINC_NOTICE_DESC" class="inputbox" />
+            
+        <field name="captcha" type="list" label="COM_JINC_CAPTCHA" 
+            description="COM_JINC_CAPTCHA_DESC" class="inputbox"
+            size="1" default="0">
+            <option value="0">COM_JINC_CAPTCHA_NO</option>
+            <option value="1">COM_JINC_CAPTCHA_REQUIRED</option>
+        </field>
+    </fieldset>
+    
+    <fieldset name="optin_message" label="COM_JINC_OPTIN" >
+        <field name="optin_subject" type="text" class="inputbox" size="40" maxlength="254"
+            label="COM_JINC_OPTIN_SUBJECT" description="COM_JINC_OPTIN_SUBJECT" />
+
+        <field name="optin" type="editor" buttons="true"
+            hide="article,pagebreak,readmore" class="inputbox"
+            label="COM_JINC_OPTIN" description="COM_JINC_OPTIN_DESC"
+            filter="safehtml" />
+    </fieldset>
+
+    <fieldset name="optinremove_message" label="COM_JINC_OPTIN" >
+        <field name="optinremove_subject" type="text" class="inputbox" size="40" maxlength="254"
+            label="COM_JINC_OPTINREMOVE_SUBJECT" description="COM_JINC_OPTINREMOVE_SUBJECT" />
+
+        <field name="optinremove" type="editor" buttons="true"
+            hide="article,pagebreak,readmore" class="inputbox"
+            label="COM_JINC_OPTINREMOVE" description="COM_JINC_OPTINREMOVE_DESC"
+            filter="safehtml" />
+    </fieldset>
+</form>

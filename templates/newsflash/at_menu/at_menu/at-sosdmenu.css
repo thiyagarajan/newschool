@@ -1,0 +1,102 @@
+
+
+#at-cssmenu { background-color: transparent; background-image: none; background-repeat: repeat-x; background-position: center 50%; float: left; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
+
+#at-cssmenu ul {
+	margin: 0; /* all lists */
+	padding: 0;
+}
+#at-cssmenu li { margin: 0; /* all list items */
+	padding: 0; float: left; display: block; background: no-repeat left top; cursor: pointer; }
+#at-cssmenu li ul {
+	width: 16.4em;
+	position: absolute; /* second-level lists */
+	z-index: 27000;
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	height: auto;
+	w\idth: 15.9em;
+}
+
+#at-cssmenu li ul ul {
+	margin: -1.9em 0 0 14.5em; /* third-and-above-level lists */
+}
+
+#at-cssmenu li li {
+	padding: 0 1em 0 0;
+	margin: 0;
+	width: 14.9em;
+}
+
+#at-cssmenu ul a {
+	width: 14.8em;
+	w\idth: 10.8em;
+}
+
+#at-cssmenu li:hover ul ul, #at-cssmenu li:hover ul ul ul,
+#at-cssmenu li.sfhover ul ul, #at-cssmenu li.havechildsfhover ul ul, #at-cssmenu li.havechild-activesfhover ul ul, #at-cssmenu li.activesfhover ul ul,
+#at-cssmenu li.sfhover ul ul ul, #at-cssmenu li.havechildsfhover ul ul ul, #at-cssmenu li.havechild-activesfhover ul ul ul, #at-cssmenu li.activesfhover ul ul ul {
+	left: -999em;
+}
+
+/* This "unhides" the sub-menus (left: -999em is what hides them) */
+#at-cssmenu li:hover ul, #at-cssmenu li li:hover ul, #at-cssmenu li li li:hover ul,
+#at-cssmenu li.sfhover ul, #at-cssmenu li.havechildsfhover ul, #at-cssmenu li.havechild-activesfhover ul, #at-cssmenu li.activesfhover ul,
+#at-cssmenu li li.sfhover ul, #at-cssmenu li li.havesubchildsfhover ul, #at-cssmenu li li.havesubchild-activesfhover ul, #at-cssmenu li li.activesfhover ul,
+#at-cssmenu li li li.sfhover ul, #at-cssmenu li li li.havesubchildsfhover ul, #at-cssmenu li li li.havesubchild-activesfhover ul, #at-cssmenu li li li.activesfhover ul {
+	left: auto;
+}
+
+/* STYLING THE MENU
+-----------------------------------*/
+/* 1st level */
+#at-cssmenu li a { margin: 0; padding: 0 15px; display: block; color: #fff; font-size: 100%; font-weight: normal; line-height: 29px; background: url(../../images/mainnav_right.jpg) no-repeat right top; text-decoration: none; text-align: center; }
+#at-cssmenu li a:hover,
+#at-cssmenu li a:active,
+#at-cssmenu li a:focus {
+	
+}
+
+#at-cssmenu li:hover a,
+#at-cssmenu li.sfhover a,
+#at-cssmenu li.havechildsfhover a,
+#at-cssmenu li.havechild-activesfhover a { color: #16cbf8; background: url(../../images/mainnav_right.jpg) no-repeat right top; text-decoration: none; }
+
+#at-cssmenu li:hover li a,
+#at-cssmenu li.sfhover li a,
+#at-cssmenu li.havechildsfhover li a,
+#at-cssmenu li.havechild-activesfhover li a { background: transparent; }
+
+#at-cssmenu li a.active,
+#at-cssmenu li a.active:hover,
+#at-cssmenu li a.active:active,
+#at-cssmenu li a.active:focus { color: #16cbf8; line-height: 29px; background: url(../../images/mainnav_right.jpg) no-repeat right top; text-decoration: none; }
+
+/* 2nd level and above */
+#at-cssmenu li ul { background: url(../../images/grad3.png) 50% top; text-align: left; }
+
+#at-cssmenu li ul li { background-image: none; text-align: left; border-bottom: 1px solid #4b4a4a; border-top-style: none; border-top-width: medium; border-right-style: none; border-right-width: medium; border-left-style: none; border-left-width: medium; }
+
+#at-cssmenu li ul a { margin: 0; padding: 0 10px; border: none; white-space: nowrap; line-height: 25px; background-image: none; text-decoration: none; text-align: left; }
+
+#at-cssmenu li.havesubchild,
+#at-cssmenu li.havesubchild-active { background: url(../../images/arrow.png) no-repeat 94% 50%; }
+
+#at-cssmenu li ul a:hover,
+#at-cssmenu li ul a:active,
+#at-cssmenu li ul a:focus,
+#at-cssmenu ul li:hover,
+#at-cssmenu ul li.sfhover,
+#at-cssmenu ul li.havesubchildsfhover,
+#at-cssmenu ul li.havesubchild-activesfhover,
+#at-cssmenu ul ul li:hover,
+#at-cssmenu ul ul li.sfhover,
+#at-cssmenu ul ul li.havesubchildsfhover,
+#at-cssmenu ul ul li.havesubchild-activesfhover { background: url(../../images/grad4.png) repeat-x 50% top; text-decoration: none; }
+
+#at-cssmenu ul li a.active,
+#at-cssmenu ul li a.active:hover,
+#at-cssmenu ul li a.active:active,
+#at-cssmenu ul li a.active:focus {
+	background: transparent !important;
+}
+

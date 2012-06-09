@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_EVENTLIST_EVENT_SUBMISSION">
+		<message>
+			<![CDATA[COM_EVENTLIST_EVENT_SUBMISSION_DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_EVENTLIST_EVENT_SUBMISSION</name>
+		<description>COM_EVENTLIST_EVENT_SUBMISSION_DESC</description>
+	</state>
+</metadata>

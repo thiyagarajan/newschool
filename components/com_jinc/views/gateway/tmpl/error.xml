@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="LAYOUT_GATEWAY_TITLE" hidden="true">
+        <message>
+			<![CDATA[LAYOUT_GATEWAY_DESC]]>
+        </message>
+    </layout>
+    <state>
+        <name>LAYOUT_GATEWAY_TITLE</name>
+        <description>LAYOUT_GATEWAY_DESC</description>
+    </state>
+</metadata>

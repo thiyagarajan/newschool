@@ -1,0 +1,82 @@
+.jinc_msg_title {
+    border-top-style: solid;
+    border-top-color: #DDDDDD;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #DDDDDD;
+    border-top-width: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    font: italic bold 14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.jinc_msg_subtitle {
+    border-top-style: solid;
+    border-top-color: #DDDDDD;
+    border-top-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #F6F6F6;
+    border-bottom-width: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    font: italic bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.jinc_msg_text {
+    border-bottom-style: solid;
+    border-bottom-color: #DDDDDD;
+    border-bottom-width: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    font: italic bold 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.jinc_frm_multisubscription {
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 30em;
+    text-align: center;
+    border-color: rgb(0,0,0);
+    border-style: dotted dotted dotted dotted;
+    border-width: 1px 1px 1px 1px;
+    padding: 20px 20px 20px 20px;
+}
+
+.jinc_frm_multisubscription input.btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    color:rgb(101,101,101);
+    font: bold 100% 'trebuchet ms',helvetica,sans-serif;
+    background-color: #DACEFF;
+    border:1px solid;
+    border-color: rgb(101,101,101) rgb(101,101,101) rgb(101,101,101) rgb(101,101,101);
+    padding: 1px 12px 1px 12px;
+}
+
+.jinc_mod_frm_multisubscription input.btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    color:rgb(101,101,101);
+    font: bold 100% 'trebuchet ms',helvetica,sans-serif;
+    background-color: #DACEFF;
+    border:1px solid;
+    border-color: rgb(101,101,101) rgb(101,101,101) rgb(101,101,101) rgb(101,101,101);
+    padding: 1px 12px 1px 12px;
+}

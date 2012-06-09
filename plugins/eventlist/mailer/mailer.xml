@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!DOCTYPE install PUBLIC 
+  "-//Joomla! 1.5//DTD plugin 1.0//EN" "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<extension version="1.6" type="plugin" group="eventlist" method="upgrade">
+  <name>Eventlist - Mailer plugin</name>
+  <creationDate>2011-10-18</creationDate>
+  <author>Christoph Lukes, Edmond Duggan, Pascal Eilrich</author>
+  <authorEmail>info@schlu.net</authorEmail>
+  <authorUrl>http://www.schlu.net</authorUrl> 
+  <copyright>This extension is released under the GNU/GPL License</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1.0.2 Stable</version>
+  <description>PLG_EVENTLIST_MAILER_EVENTLISTMAILER_PLUGIN_DESC</description>
+  
+	<files>
+		<filename plugin="mailer">mailer.php</filename>
+	</files>
+    
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_eventlist_mailer.ini</language>
+	</languages>
+  <config>
+  <fields name="params">
+	<fieldset name="basic">
+    <field type="radio" name="reg_mail_user" label="PLG_EVENTLIST_MAILER_MAIL_USER_REG" default="1" description="PLG_EVENTLIST_MAILER_MAIL_USER_REG_DESC">
+    	<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field type="radio" name="reg_mail_admin" label="PLG_EVENTLIST_MAILER_MAIL_ADMIN_REG" default="0" description="PLG_EVENTLIST_MAILER_MAIL_ADMIN_REG_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field type="radio" name="unreg_mail_user" label="PLG_EVENTLIST_MAILER_MAIL_USER_UNREG" default="1" description="PLG_EVENTLIST_MAILER_MAIL_USER_UNREG_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field type="radio" name="unreg_mail_admin" label="PLG_EVENTLIST_MAILER_MAIL_ADMIN_UNREG" default="0" description="PLG_EVENTLIST_MAILER_MAIL_ADMIN_UNREG_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+    </field>
+	
+		<field type="radio" name="newevent_mail_user" label="PLG_EVENTLIST_MAILER_MAIL_USER_NEW_EVENT" default="0" description="PLG_EVENTLIST_MAILER_MAIL_USER_NEW_EVENT_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+	    </field>
+		<field type="radio" name="newevent_mail_admin" label="PLG_EVENTLIST_MAILER_MAIL_ADMIN_NEW_EVENT" default="0" description="PLG_EVENTLIST_MAILER_MAIL_ADMIN_NEW_EVENT_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+	    </field>
+			<field type="radio" name="editevent_mail_user" label="PLG_EVENTLIST_MAILER_MAIL_USER_EDIT_EVENT" default="0" description="PLG_EVENTLIST_MAILER_MAIL_USER_EDIT_EVENT_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+	    </field>
+		<field type="radio" name="editevent_mail_admin" label="PLG_EVENTLIST_MAILER_MAIL_ADMIN_EDIT_EVENT" default="0" description="PLG_EVENTLIST_MAILER_MAIL_ADMIN_EDIT_EVENT_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+	    </field>
+			<field type="radio" name="newvenue_mail_user" label="PLG_EVENTLIST_MAILER_MAIL_USER_NEW_VENUE" default="0" description="PLG_EVENTLIST_MAILER_MAIL_USER_NEW_VENUE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+	    </field>
+		<field type="radio" name="newvenue_mail_admin" label="PLG_EVENTLIST_MAILER_MAIL_ADMIN_NEW_VENUE" default="0" description="PLG_EVENTLIST_MAILER_MAIL_ADMIN_NEW_VENUE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+	    </field>
+			<field type="radio" name="editvenue_mail_user" label="PLG_EVENTLIST_MAILER_MAIL_USER_EDIT_VENUE" default="0" description="PLG_EVENTLIST_MAILER_MAIL_USER_EDIT_VENUE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+	    </field>
+		<field type="radio" name="editvenue_mail_admin" label="PLG_EVENTLIST_MAILER_MAIL_ADMIN_EDIT_VENUE" default="0" description="PLG_EVENTLIST_MAILER_MAIL_ADMIN_EDIT_VENUE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+	    </field>
+		
+		<field type="radio" name="fetch_admin_mails" label="PLG_EVENTLIST_MAILER_MAIL_ALL_ADMINS" default="0" description="PLG_EVENTLIST_MAILER_MAIL_ALL_ADMINS_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+	    </field>
+		
+		<field type="text" name="receivers" label="PLG_EVENTLIST_MAILER_ADDITIONAL_MAIL_RECEIVERS" default="" description="PLG_EVENTLIST_MAILER_ADDITIONAL_MAIL_RECEIVERS_DESC" />
+	</fieldset>
+	</fields>
+   </config>
+</extension>

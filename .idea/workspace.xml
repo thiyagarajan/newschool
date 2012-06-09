@@ -22,28 +22,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/newsflash/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="35" selection-start="5196" selection-end="5206" vertical-scroll-proportion="0.0">
+            <state line="233" column="10" selection-start="7518" selection-end="7518" vertical-scroll-proportion="0.7702703">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="color2.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/newsflash/css/colors/color2.css">
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/newsflash/header/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="676" column="4" selection-start="10321" selection-end="10321" vertical-scroll-proportion="0.72432435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="templateDetails.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/newsflash/templateDetails.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="24" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="51" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,9 +57,9 @@
         <option value="$PROJECT_DIR$/templates/newsflash/header/header.php" />
         <option value="$PROJECT_DIR$/templates/newsflash/at_menu.php" />
         <option value="$PROJECT_DIR$/templates/newsflash/at_menu/Base.class.php" />
-        <option value="$PROJECT_DIR$/templates/newsflash/index.php" />
         <option value="$PROJECT_DIR$/templates/newsflash/templateDetails.xml" />
         <option value="$PROJECT_DIR$/templates/newsflash/css/colors/color2.css" />
+        <option value="$PROJECT_DIR$/templates/newsflash/index.php" />
       </list>
     </option>
   </component>
@@ -172,33 +163,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newschool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newschool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsflash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="colors" />
+              <option name="myItemId" value="header" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -382,13 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newsflash/header/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/newsflash/at_tools.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -417,16 +375,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newsflash/index.php">
+    <entry file="file://$PROJECT_DIR$/templates/newsflash/css/colors/color2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="35" selection-start="5196" selection-end="5206" vertical-scroll-proportion="0.0">
+        <state line="676" column="4" selection-start="10321" selection-end="10321" vertical-scroll-proportion="0.72432435">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newsflash/css/colors/color2.css">
+    <entry file="file://$PROJECT_DIR$/administrator/language/en-GB/en-GB.com_menus.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="676" column="4" selection-start="10321" selection-end="10321" vertical-scroll-proportion="0.72432435">
+        <state line="155" column="23" selection-start="10784" selection-end="10784" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_content/models/archive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="21" selection-start="925" selection-end="925" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newsflash/header/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="51" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newsflash/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="233" column="10" selection-start="7518" selection-end="7518" vertical-scroll-proportion="0.7702703">
           <folding />
         </state>
       </provider>

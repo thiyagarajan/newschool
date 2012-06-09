@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+        <view title="SectionCategoryArticleList">
+		<message>SectionCategoryArticleList</message>
+	</view>
+
+		<config>
+		   <fields name="params">
+			<fieldset name="basic">
+				<field
+					name="headline"
+					type="text"
+					default=""
+					label="COM_SECTIONCATEGORYARTICLELIST_HEADLINE"
+					description=""
+					size="10" />
+
+				<field
+					name="catid"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					size="10"
+					default=""
+					label="JCATEGORY"
+					description="" >
+					<option value="">JOPTION_ALL_CATEGORIES</option>
+				</field>
+				<field
+					name="pretext"
+					type="editor"
+					rows="10"
+					label="COM_SECTIONCATEGORYARTICLELIST_PRETEXT"
+					description=""
+					filter="safehtml" >
+				</field>
+				<field
+					name="posttext"
+					type="editor"
+					rows="10"
+					label="COM_SECTIONCATEGORYARTICLELIST_POSTTEXT"
+					description=""
+					filter="safehtml" >
+				</field>
+			</fieldset>
+		   </fields>
+		</config>
+</metadata>

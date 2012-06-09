@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system" method="upgrade">
+    <name>System - List of Articles</name>
+    <author>DesignCompass corp</author>
+    <creationDate>April 2011</creationDate>
+    <copyright>Copyright (C) 2010-2011 DesignCompassCorp. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>admin@designcompasscorp.com</authorEmail>
+    <authorUrl>http://www.designcompasscorp.com/</authorUrl>
+    <version>1.1.6</version>
+    <description>List of Articles Plugin v 1.1.6</description>
+	
+    <files>
+        <filename plugin="listofarticles">listofarticles.php</filename>
+		<filename>listofarticles.xml</filename>
+    </files>
+	
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+    
+		<field  name="articlecssclass" type="text" default="" label="Artile List CSS Class" description="" />
+		<field  name="menucssclass" type="text" default="" label="Menu List CSS Class" description="" />
+		
+		</fieldset>
+	</fields>
+	</config>
+	
+	<languages>
+      <language tag="en-GB">language/en-GB/en-GB.plg_content_listofarticles.ini</language>
+    </languages>
+
+</extension>

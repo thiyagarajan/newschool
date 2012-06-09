@@ -223,6 +223,7 @@ break;
 <div id="at-contentwrap">
 
 <!-- START HEADER IMAGES -->
+<?php if( $this->countModules('slider') ) {?>
 <div id= "javascript-flash-header">
 <div class="content">
 <div id="myGallery">
@@ -230,6 +231,7 @@ break;
 </div>
 </div>
 </div>
+<?php } ?>
 <?php include (dirname(__FILE__).DS.'/header/header.php'); ?>
 <!-- END HEADER IMAGES -->
 

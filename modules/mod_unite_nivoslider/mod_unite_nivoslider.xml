@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension	type="module" version="1.6.0" client="site">
+	<name>Unite Nivo Slider</name>
+	<author>Unite Joomla</author>
+	<creationDate>March 2012</creationDate>
+	<copyright>Copyright (C) 2012 UnitJoomla.com, All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>support@unitejoomla.com</authorEmail>
+	<authorUrl>http://www.unitejoomla.com</authorUrl>
+	<version>1.0.1</version>
+	<description>Nivo slider module. Put nivo slider to the page. This module using nivo slider component for slides select</description>
+	
+	<files>
+		<filename module="mod_unite_nivoslider">mod_unite_nivoslider.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<filename>mod_unite_nivoslider.xml</filename>
+	</files>
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_nivoslider/models/fields">
+			<fieldset name="general" label="General Settings">
+				 <field name="sliderid"
+					type="slider_slider"
+					label="Slider"
+					description="Choose a slider from the component"
+				/>
+				
+				<field type="spacer" hr="true" />
+				
+				<field name="width" 
+					   type="text" 
+					   label="Width"
+					   default="618" 
+					   description="Sets the Size of the Slider Images. Padding, shadows etc will added from this size."></field>
+					   
+				<field name="height" 
+					   type="text"  
+					   label="Height"
+					   default="246" 
+					   description="Sets the Size of the Slider Images. Padding, shadows etc will added from this size."></field>
+				
+				<field name="pauseTime" 
+					   type="text" 
+					   label="Pause Time"
+					   default="3000" 
+					   description="How long each slide will show"></field>
+								
+				<field name="animSpeed" 
+					   type="text" 
+					   label="Animation Speed"
+					   default="500" 
+					   description="Slide transition speed"></field>
+				
+				<field name="effect" 
+					  type="list" 
+					  default="" 
+					  label="Custom Effects"
+					  multiple = "true"
+					  size="7"
+					  description="The slide effect. Can choose several effects per slider, if no effects selected, it will be 'random'">
+						  <option value="sliceDown">sliceDown</option>
+						  <option value="sliceDownLeft">sliceDownLeft</option>
+						  <option value="sliceUp">sliceUp</option>
+						  <option value="sliceUpLeft">sliceUpLeft</option>
+						  <option value="sliceUpDown">sliceUpDown</option>
+						  <option value="sliceUpDownLeft">sliceUpDownLeft</option>
+						  <option value="fold">fold</option>
+						  <option value="fade">fade</option>
+						  <option value="slideInRight">slideInRight</option>
+						  <option value="slideInLeft">slideInLeft</option>
+						  <option value="boxRandom">boxRandom</option>
+						  <option value="boxRain">boxRain</option>
+						  <option value="boxRainReverse">boxRainReverse</option>
+						  <option value="boxRainGrow">boxRainGrow</option>
+						  <option value="boxRainGrowReverse">boxRainGrowReverse</option>
+				</field>
+				
+			</fieldset>
+			
+			<fieldset name="appearance" label="Appearance Settings">
+
+				<field name="theme" 
+					type="folderlist" 
+					directory="modules/mod_unite_nivoslider/tmpl/themes" 
+					default="default" 
+					label="Theme (folder list)"
+					description="The theme, you can find the themes CSS under /modules/mod_unite_nivoslider/tmpl/themes and edit their CSS as you like. Note - to create a new custom theme, just copy some folder to a new folder, and it will appear in the list"
+					hide_none = "true"
+					hide_default = "true"
+				 />
+								
+				<field type="spacer" hr="true" />
+				
+				<field name="controlNav"
+					  type="radio" 
+					  default="true" 
+					  label="Control Nav" 
+					  description="1,2,3... navigation">
+						  <option value="true">True</option>
+						  <option value="false">False</option>
+				</field>
+								
+<!-- 
+				<field name="controlNavThumbs" 
+					  type="radio" 
+					  default="false" 
+					  label="Control Nav Thumbs" 
+					  description="Use thumbnails for Control Nav">
+						  <option value="true">True</option>
+						  <option value="false">False</option>
+				</field>
+-->
+							
+				<field type="spacer" hr="true" />
+			
+				<field name="captionOpacity" 
+					   type="text" 
+					   label="Caption Opacity"
+					   default="0.8" 
+					   description="Universal caption opacity"></field>
+				<field name="directionNav" 
+					  type="radio" 
+					  default="true" 
+					  label="Direction Nav" 
+					  description="Next and Prev navigation buttons">
+						  <option value="true">True</option>
+						  <option value="false">False</option>
+				</field>				
+
+				<field name="directionNavHide" 
+					  type="radio" 
+					  default="true" 
+					  label="Direction Nav Hide" 
+					  description="Show navigation buttons only on hover">
+						  <option value="true">True</option>
+						  <option value="false">False</option>
+				</field>
+				
+				<field name="prevText" 
+					   type="text" 
+					   label="Prev Text"
+					   default="Prev" 
+					   description="Prev directionNav text"></field>
+
+				<field name="nextText" 
+					   type="text" 
+					   label="Next Text"
+					   default="Next" 
+					   description="Next directionNav text"></field>
+				
+			</fieldset>
+			
+			<fieldset name="other" label="Other Settings">
+					   
+				<field name="startSlide" 
+					   type="text" 
+					   label="Start Slide"
+					   default="0" 
+					   description="Set starting Slide (0 index)"></field>
+
+				<field name="randomStart" 
+					  type="radio" 
+					  default="false" 
+					  label="Random Start" 
+					  description="Start on a random slide">
+						  <option value="true">True</option>
+						  <option value="false">False</option>
+				</field>
+								
+				<field type="spacer" hr="true" />
+
+				<field name="pauseOnHover" 
+					  type="radio" 
+					  default="true" 
+					  label="Pause On Hover" 
+					  description="Stop animation while hovering">
+						  <option value="true">True</option>
+						  <option value="false">False</option>
+				</field>
+
+				<field name="manualAdvance" 
+					  type="radio" 
+					  default="false" 
+					  label="Manual Advance" 
+					  description="Force manual transitions (the slides will change only menually from user js api call)">
+						  <option value="true">True</option>
+						  <option value="false">False</option>
+				</field>
+				
+				<field type="spacer" hr="true" />
+
+
+				<field name="keyboardNav" 
+					  type="radio" 
+					  default="true" 
+					  label="Use Keyboard" 
+					  description="Use left and right arrows">
+						  <option value="true">True</option>
+						  <option value="false">False</option>
+				</field>				
+
+				<field type="spacer" hr="true" />
+				
+				<field name="slices" 
+					   type="text" 
+					   label="Slices"
+					   default="15" 
+					   description="For slice animations"></field>
+
+				<field name="boxCols" 
+					   type="text" 
+					   label="Box Columns"
+					   default="8" 
+					   description="For box animations"></field>
+
+				<field name="boxRows" 
+					   type="text" 
+					   label="Box Rows"
+					   default="4" 
+					   description="For box animations"></field>
+
+				</fieldset> <!--  Other Settings -->
+				
+				<fieldset name="event_functions" label="Event Functions Settings">
+				
+					<field name="beforeChange" 
+						   type="text" 
+						   label="beforeChange"
+						   default="function(){}" 
+						   description="Triggers before a slide transition"></field>
+	
+					<field name="afterChange" 
+						   type="text" 
+						   label="afterChange"
+						   default="function(){}" 
+						   description="Triggers after a slide transition"></field>
+	
+					<field name="slideshowEnd" 
+						   type="text" 
+						   label="slideshowEnd"
+						   default="function(){}" 
+						   description="Triggers after all slides have been shown"></field>
+	
+					<field name="lastSlide" 
+						   type="text" 
+						   label="lastSlide"
+						   default="function(){}" 
+						   description="Triggers when last slide is shown"></field>
+	
+					<field name="afterLoad" 
+						   type="text" 
+						   label="afterLoad"
+						   default="function(){}" 
+						   description="Triggers when slider has loaded"></field>
+					   
+			</fieldset>	<!-- end event functions -->
+
+				
+			<fieldset name="advanced">
+				
+				<field name="include_jquery" 
+					   type="radio"
+					   default="true" 
+					   label="Include jQuery 1.7 js" 
+					   description="Add include of jquery js. If you have jquery include in other module, and you don't want to double include, choose 'No'">
+						  <option value="true">Yes</option>
+						  <option value="false">No</option>
+				</field>				
+				
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+				
+			</fieldset>
+				
+		</fields>
+	</config>
+</extension>

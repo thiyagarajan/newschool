@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	
+	<fieldset>
+		<field name="id"
+			type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			size="10"
+			default="0"
+			readonly="true"
+			class="readonly"
+		/>
+		
+		<field name="title"
+			type="text"
+			label="JGLOBAL_TITLE"
+			description="COM_NIVOSLIDER_TITLE_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		 />
+		 
+		 <field name="alias"
+			type="text"
+			label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			class="inputbox"
+			size="30"
+		/>
+		
+		<field id="published"
+			name="published"
+			type="list"
+			label="JGLOBAL_STATE"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1"
+		>
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>			
+		</field>
+		
+			
+	</fieldset>
+	
+	<fields name="params">
+		<fieldset name="jbasic"	label="COM_NIVOSLIDER_SLIDER_OPTIONS">
+			
+		</fieldset>	
+	</fields>
+</form>

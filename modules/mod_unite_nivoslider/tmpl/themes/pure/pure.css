@@ -1,0 +1,73 @@
+/*
+Skin Name: Nivo Slider Pure Skin
+Skin URI: http://www.unitejoomla.com
+Skin Type: flexible
+Description: Pure skin for nivo slider
+Version: 1.0
+Author: Unite Joomla
+Author URI: http://www.unitejoomla.com
+*/
+
+.theme-pure .nivoSlider {
+	position:relative;
+	background:#fff url(loading.gif) no-repeat 50% 50%;
+    margin-bottom:50px;
+}
+
+.theme-pure .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-pure .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.theme-pure .nivo-controlNav {
+	position:absolute;
+	left:50%;
+	bottom:-38px;
+    margin-left:-40px; /* Tweak this to center bullets */
+}
+.theme-pure .nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	background:url(bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.theme-pure .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.theme-pure .nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+.theme-pure a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+.theme-pure a.nivo-prevNav {
+	left:15px;
+}
+
+.theme-pure .nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.theme-pure .nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.theme-pure .nivo-caption a:hover {
+    color:#fff;
+}

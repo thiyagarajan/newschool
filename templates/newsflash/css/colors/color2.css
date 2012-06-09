@@ -650,3 +650,16 @@ div.default div.at-dropdown dt:hover span.header-r {
 #at-bottomwrap #at-bottom .at-grusht-left, #at-bottomwrap #at-bottom .at-grusht-right, #at-bottomwrap #at-bottom .at-grusht-rightcol {
     height: 294px !important;
 }
+
+#myGallery .moduletable {
+    padding: 0 0 0 0;
+}
+
+.nivo-controlNav {
+    display: none;
+}
+
+#at-cssmenu li.active a{
+    display: block;
+    color: #F57B2D;
+}

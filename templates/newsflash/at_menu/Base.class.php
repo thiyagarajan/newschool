@@ -47,7 +47,7 @@ if (!defined ('_AT_BASE_MENU_CLASS')) {
 							break;
 					}
 					if (strcasecmp(substr($v->url, 0, 4), 'http') && (strpos($v->link, 'index.php?') !== false)) {
-						$iParams =& new JParameter($v->params);
+						$iParams = new JParameter($v->params);
 						$iSecure = $iParams->def('secure', 0);
 						$v->url = JRoute::_($v->url, true, $iSecure);
 					}else{
@@ -137,7 +137,7 @@ if (!defined ('_AT_BASE_MENU_CLASS')) {
 				$tmp = $item;
 			}
 
-			$iParams =& new JParameter($tmp->params);
+			$iParams = new JParameter($tmp->params);
 			if ($iParams->get('menu_image') && $iParams->get('menu_image') != -1) {
 				$image = '<img src="images/stories/'.$iParams->get('menu_image').'" alt="" />';
 			} else {

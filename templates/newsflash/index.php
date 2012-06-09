@@ -133,6 +133,7 @@ document.write ('<style type="text\/css">#at-tabmodulewrap .moduletable {display
 <!-- Start main navigation -->
 <div id="at-wrapmainnavigation" class="clearfix">
 <div id="at-mainnavigation">
+<jdoc:include type="modules" name="position-0" style="none" />
 <?php
 switch ($ATconfig->at_menutype) {
 case 2:
@@ -222,6 +223,13 @@ break;
 <div id="at-contentwrap">
 
 <!-- START HEADER IMAGES -->
+<div id= "javascript-flash-header">
+<div class="content">
+<div id="myGallery">
+<jdoc:include type="modules" name="slider" style="xhtml" />
+</div>
+</div>
+</div>
 <?php include (dirname(__FILE__).DS.'/header/header.php'); ?>
 <!-- END HEADER IMAGES -->
 

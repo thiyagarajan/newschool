@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade" client="admin">
+    <name>com_nivoslider</name>
+    <creationDate>March 2012</creationDate>
+    <author>Unite Joomla</author>
+	<copyright>Copyright (C) 2012 UnitJoomla.com, All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>support@unitejoomla.com</authorEmail>
+	<authorUrl>http://www.unitejoomla.com</authorUrl>
+    <version>1.0.0</version>
+	<!-- <platform_version>1.0.1</platform_version>-->
+	
+	<description>
+		Create slides source for Nivo Slider module 
+	</description>
+	
+	<!--<scriptfile>script.php</scriptfile> <!- - New in 1.6 -->
+	
+	<install>
+		<sql>
+            <file charset="utf8" driver="mysql">sql/install.sql</file>
+        </sql>
+    </install>
+	
+	<uninstall>
+		<sql>
+            <file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+        </sql>
+    </uninstall>
+
+    <administration>
+    	
+    	<menu>COM_NIVOSLIDER</menu>
+		
+    	<files folder="admin">
+        	<filename>nivoslider.php</filename>
+            <filename>controller.php</filename>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>language</folder>
+            <folder>models</folder>
+			<folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        
+    </administration>
+
+</extension>

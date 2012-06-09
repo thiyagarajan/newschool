@@ -1,0 +1,47 @@
+
+ul#slide_list li{
+	xmin-height:35px;
+}
+
+.sap_vert{
+	height:40px;
+}
+
+.input_url{
+	width:230px;
+}
+
+.hidden{
+	display:none;
+}
+
+.input_example{
+	float:left;
+	display:block;
+	padding-top:7px;
+	font-style:italic;
+}
+
+.area_left{
+	height:100px;
+}
+
+.slider_edit_slides a{
+	margin-left:10px;
+	margin-top:10px;
+	font-size:20px;	
+}
+
+.help_item{
+	width:500px;
+	max-width:500px;
+}
+
+.toggle-editor{
+	clear:both;
+}
+
+.inputbox_big{
+	width:240px;
+    font-size: 1.364em;
+}

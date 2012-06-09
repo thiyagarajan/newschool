@@ -38,6 +38,7 @@
     <position>bottom</position>
     <position>inset</position>
     <position>banner</position>
+    <position>position-0</position>
     <position>header</position>
     <position>footer</position>
     <position>newsflash</position>
@@ -73,7 +74,7 @@
     <position>advert3</position>
     <position>debug</position>
     <position>syndicate</position>
-
+    <position>slider</position>
     <position>shownews</position>
     <position>toppanel</position>
     <position>usertab</position>

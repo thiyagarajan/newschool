@@ -1,122 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN"
+        "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" client="site">
-<name>newsflash</name>
-<creationDate>2012</creationDate>
-<author>atjoomla.com</author>
-<copyright>atjoomla.com joomla templates</copyright>
-<authorEmail>info@atjoomla.com</authorEmail>
-<authorUrl>www.atjoomla.com</authorUrl>
-<version>2.5.0</version>
-<description>at_newsflash joomla 2.5 templates</description>
+  <name>newsflash</name>
+  <creationDate>2012</creationDate>
+  <author>atjoomla.com</author>
+  <copyright>atjoomla.com joomla templates</copyright>
+  <authorEmail>info@atjoomla.com</authorEmail>
+  <authorUrl>www.atjoomla.com</authorUrl>
+  <version>2.5.0</version>
+  <description>at_newsflash joomla 2.5 templates</description>
 
-<files>
+  <files>
 
-<filename>footer.php</filename>
-<filename>index.php</filename>
-<filename>at_menu.php</filename>
-<filename>at_tools.php</filename>
-<filename>params.ini</filename>
-<filename>templateDetails.xml</filename>
-<filename>template_thumbnail.png</filename>
-<filename>blank.html</filename>
+    <filename>footer.php</filename>
+    <filename>index.php</filename>
+    <filename>at_menu.php</filename>
+    <filename>at_tools.php</filename>
+    <filename>params.ini</filename>
+    <filename>templateDetails.xml</filename>
+    <filename>template_thumbnail.png</filename>
+    <filename>blank.html</filename>
 
-<folder>at_menu/</folder>
-<folder>css/</folder>
-<folder>header/</folder>
-<folder>images/</folder>
-<folder>scripts/</folder>
+    <folder>at_menu/</folder>
+    <folder>css/</folder>
+    <folder>header/</folder>
+    <folder>images/</folder>
+    <folder>scripts/</folder>
 
-</files>
+  </files>
 
-<positions>
+  <positions>
 
-<position>left</position>
-<position>right</position>
-<position>top</position>
-<position>bottom</position>
-<position>inset</position>
-<position>banner</position>
-<position>header</position>
-<position>footer</position>
-<position>newsflash</position>
-<position>legals</position>
-<position>pathway</position>
-<position>breadcrumb</position>
-<position>user1</position>
-<position>user2</position>
-<position>user3</position>
-<position>user4</position>
-<position>user5</position>
-<position>user6</position>
-<position>user7</position>
-<position>user8</position>
-<position>user9</position>
-<position>user10</position>
-<position>user11</position>
-<position>user12</position>
-<position>user13</position>
-<position>user14</position>
-<position>user15</position>
-<position>user16</position>
-<position>user9</position>
-<position>user23</position>
-<position>user24</position>
-<position>user25</position>
-<position>user26</position>
-<position>user27</position>
-<position>user29</position>
-<position>user30</position>
-<position>advert1</position>
-<position>advert2</position>
-<position>advert3</position>
-<position>debug</position>
-<position>syndicate</position>
+    <position>left</position>
+    <position>right</position>
+    <position>top</position>
+    <position>bottom</position>
+    <position>inset</position>
+    <position>banner</position>
+    <position>header</position>
+    <position>footer</position>
+    <position>newsflash</position>
+    <position>legals</position>
+    <position>pathway</position>
+    <position>breadcrumb</position>
+    <position>user1</position>
+    <position>user2</position>
+    <position>user3</position>
+    <position>user4</position>
+    <position>user5</position>
+    <position>user6</position>
+    <position>user7</position>
+    <position>user8</position>
+    <position>user9</position>
+    <position>user10</position>
+    <position>user11</position>
+    <position>user12</position>
+    <position>user13</position>
+    <position>user14</position>
+    <position>user15</position>
+    <position>user16</position>
+    <position>user9</position>
+    <position>user23</position>
+    <position>user24</position>
+    <position>user25</position>
+    <position>user26</position>
+    <position>user27</position>
+    <position>user29</position>
+    <position>user30</position>
+    <position>advert1</position>
+    <position>advert2</position>
+    <position>advert3</position>
+    <position>debug</position>
+    <position>syndicate</position>
 
-<position>shownews</position>
-<position>toppanel</position>
-<position>usertab</position>
-<position>dropdown</position>
-<position>flash_header</position>
-<position>left_main</position>
-<position>templatechooser</position>
-<position>whoisonline</position>
-<position>login</position>
-<position>l_col</position>
+    <position>shownews</position>
+    <position>toppanel</position>
+    <position>usertab</position>
+    <position>dropdown</position>
+    <position>flash_header</position>
+    <position>left_main</position>
+    <position>templatechooser</position>
+    <position>whoisonline</position>
+    <position>login</position>
+    <position>l_col</position>
 
-</positions>
+  </positions>
 
-	<config>
-	<fields name="params">
-			<fieldset name="advanced">
-				<field name="ColorCSS" type="list" default="default" label="Color Variation" description="Color variation to use" filter="string">
-					<option value="default">Default</option>
-					<option value="color1">Color1</option>
-					<option value="color2">Color2</option>
-					<option value="color3">Color3</option>
-				</field>
-				<field name="FontSize" type="list" default="3" label="Font size" description="Font size to use" filter="int">
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-				</field>
-				<field name="ScreenType" type="list" default="fmax" label="Template Width" description="Width style of the template" filter="string">
-					<option value="wide"></option>
-				</field>
-				<field name="MenuType" type="list" default="1" label="Menu Module" description="Menu display module" filter="int">
-				<option value="2">css</option>
-				<option value="4">Moo</option>
-				</field>
-				<field name="usertool" type="list" default="1" label="Display template tool" description="Display template tool" filter="int">
-				<option value="0">No display</option>
-				<option value="2">Font Size</option>
-				<option value="4">Color Css</option>
-				<option value="6">Font Size and Color Css</option>
-				</field>
-			</fieldset>				
-	</fields>
-	</config>
+  <config>
+    <fields name="params">
+      <fieldset name="advanced">
+        <field name="ColorCSS" type="list" default="default" label="Color Variation"
+               description="Color variation to use" filter="string">
+          <option value="default">Default</option>
+          <option value="color1">Color1</option>
+          <option value="color2">Color2</option>
+          <option value="color3">Color3</option>
+        </field>
+        <field name="FontSize" type="list" default="3" label="Font size" description="Font size to use" filter="int">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </field>
+        <field name="ScreenType" type="list" default="fmax" label="Template Width"
+               description="Width style of the template" filter="string">
+          <option value="wide"></option>
+        </field>
+        <field name="MenuType" type="list" default="1" label="Menu Module" description="Menu display module"
+               filter="int">
+          <option value="2">css</option>
+          <option value="4">Moo</option>
+        </field>
+        <field name="usertool" type="list" default="1" label="Display template tool" description="Display template tool"
+               filter="int">
+          <option value="0">No display</option>
+          <option value="2">Font Size</option>
+          <option value="4">Color Css</option>
+          <option value="6">Font Size and Color Css</option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
 </extension>

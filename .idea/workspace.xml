@@ -22,28 +22,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="version.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libraries/cms/version/version.php">
+      <file leaf-file-name="color2.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/newsflash/css/colors/color2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="126" selection-start="1147" selection-end="1254" vertical-scroll-proportion="0.0">
+            <state line="650" column="29" selection-start="10030" selection-end="10030" vertical-scroll-proportion="0.65507245">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="platform.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libraries/platform.php">
+      <file leaf-file-name="Base.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/newsflash/at_menu/Base.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="130" selection-start="984" selection-end="1091" vertical-scroll-proportion="0.0">
+            <state line="55" column="72" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="en-GB.mod_footer.ini" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.mod_footer.ini">
+      <file leaf-file-name="templateDetails.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/newsflash/templateDetails.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="18" selection-start="422" selection-end="422" vertical-scroll-proportion="0.3550914">
+            <state line="115" column="18" selection-start="3754" selection-end="3982" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -62,6 +62,9 @@
         <option value="$PROJECT_DIR$/libraries/cms/version/version.php" />
         <option value="$PROJECT_DIR$/libraries/platform.php" />
         <option value="$PROJECT_DIR$/language/en-GB/en-GB.mod_footer.ini" />
+        <option value="$PROJECT_DIR$/templates/newsflash/at_menu/Base.class.php" />
+        <option value="$PROJECT_DIR$/templates/newsflash/templateDetails.xml" />
+        <option value="$PROJECT_DIR$/templates/newsflash/css/colors/color2.css" />
       </list>
     </option>
   </component>
@@ -103,6 +106,48 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="newschool" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newschool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newschool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newschool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newschool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newschool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newschool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsflash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -250,23 +295,44 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libraries/cms/version/version.php">
+    <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.mod_footer.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="126" selection-start="1147" selection-end="1254" vertical-scroll-proportion="0.0">
+        <state line="8" column="18" selection-start="422" selection-end="422" vertical-scroll-proportion="0.3550914">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libraries/platform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="130" selection-start="984" selection-end="1091" vertical-scroll-proportion="0.0">
+        <state line="39" column="130" selection-start="984" selection-end="1091" vertical-scroll-proportion="0.33243242">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.mod_footer.ini">
+    <entry file="file://$PROJECT_DIR$/libraries/cms/version/version.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="422" selection-end="422" vertical-scroll-proportion="0.3550914">
+        <state line="49" column="126" selection-start="1147" selection-end="1254" vertical-scroll-proportion="0.045945946">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newsflash/at_menu/Base.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="72" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newsflash/templateDetails.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="18" selection-start="3754" selection-end="3982" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newsflash/css/colors/color2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="650" column="29" selection-start="10030" selection-end="10030" vertical-scroll-proportion="0.65507245">
           <folding />
         </state>
       </provider>

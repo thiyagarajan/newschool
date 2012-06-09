@@ -64,7 +64,7 @@ $divid = '-f';
 <jdoc:include type="head" />
 <?php $tempTools->genMenuHead(); ?>
 
-<link rel="stylesheet" href="templates/_system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="templates/system/css/general.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template?>/css/template_css.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template?>/css/colors/<?php echo $ATconfig->at_color; ?>.css" type="text/css" />
 

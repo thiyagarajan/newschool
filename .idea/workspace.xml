@@ -22,28 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="color2.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/newsflash/css/colors/color2.css">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/newsflash/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="650" column="29" selection-start="10030" selection-end="10030" vertical-scroll-proportion="0.65507245">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Base.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/newsflash/at_menu/Base.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="72" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="templateDetails.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/newsflash/templateDetails.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="18" selection-start="3754" selection-end="3982" vertical-scroll-proportion="0.0">
+            <state line="107" column="100" selection-start="4251" selection-end="4254" vertical-scroll-proportion="0.48115942">
               <folding />
             </state>
           </provider>
@@ -65,6 +47,7 @@
         <option value="$PROJECT_DIR$/templates/newsflash/at_menu/Base.class.php" />
         <option value="$PROJECT_DIR$/templates/newsflash/templateDetails.xml" />
         <option value="$PROJECT_DIR$/templates/newsflash/css/colors/color2.css" />
+        <option value="$PROJECT_DIR$/templates/newsflash/index.php" />
       </list>
     </option>
   </component>
@@ -316,23 +299,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newsflash/css/colors/color2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="650" column="29" selection-start="10030" selection-end="10030" vertical-scroll-proportion="0.65507245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/newsflash/at_menu/Base.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="72" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.0">
+        <state line="55" column="72" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.32162163">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/newsflash/templateDetails.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="18" selection-start="3754" selection-end="3982" vertical-scroll-proportion="0.0">
+        <state line="115" column="18" selection-start="3754" selection-end="3982" vertical-scroll-proportion="0.6449086">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newsflash/css/colors/color2.css">
+    <entry file="file://$PROJECT_DIR$/templates/newsflash/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="650" column="29" selection-start="10030" selection-end="10030" vertical-scroll-proportion="0.65507245">
+        <state line="107" column="100" selection-start="4251" selection-end="4254" vertical-scroll-proportion="0.48115942">
           <folding />
         </state>
       </provider>

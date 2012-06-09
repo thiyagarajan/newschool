@@ -667,3 +667,21 @@ div.default div.at-dropdown dt:hover span.header-r {
 #at-tabmodulewrap-top #at-tabmodulewrap-bot {
     height: 217px !important;
 }
+
+#at-content{
+width: 630px;
+}
+
+.pagination ul
+{
+
+}
+
+.pagination ul li
+{
+    display: table-cell;
+    list-style-type: none;
+    background-image: none;
+    list-style-image: none;
+    padding-left: 10px;
+}

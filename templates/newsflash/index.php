@@ -67,7 +67,8 @@ $divid = '-f';
 <link rel="stylesheet" href="templates/system/css/general.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template?>/css/template_css.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template?>/css/colors/<?php echo $ATconfig->at_color; ?>.css" type="text/css" />
-
+<script type="text/javascript" src="<?php echo $this->baseurl; ?>/modules/mod_dinamods/mod_toppanel.js"></script>
+<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/modules/mod_dinamods/mod_toppanel.css.php" type="text/css" />
 <!--[if lte IE 6]><P>
 
 <style type="text/css">
@@ -114,6 +115,35 @@ document.write ('<style type="text\/css">#at-tabmodulewrap .moduletable {display
 
 <!-- /////////////  Start module toppanel  ////////////////// -->
 <div>
+<div class="default">
+<div id="toppanel-1" class="toppanel">
+
+<div class="panel-container" style="top: 0px;">
+<div class="panel-wrapper">
+<div class="panel" style="height: 250px; margin-top: -250px;">
+<div class="content" style="width: 950px;">
+<div class="article">
+	<p><span style="font-size: 14pt;"><strong><img width="200" style="float: left; margin: 5px;" alt="Crumbling Infrastructure" src="http://www.newschool.edu/scepa/images/deficit%20picture.jpg" />SCEPA's Deficit Commission Project</strong></span></p>
+<p>Dedicated to providing a full debate on the issues of economic  recovery, the deficit, and responsible tax policy, SCEPA has initiated  its <a href="/deficit-commission-project.html">Deficit Commission Project</a> to track  and respond to President Obama's National Commission on Fiscal  Responsibility and Reform, along with the many other expert groups  offering economic and budgetary reform models for the short- and  long-term. &nbsp;As this issue advances, we will post responses and analysis  by SCEPA economists, while building a catalog of mainstream and  non-mainstream comments and proposals.</p>	</div></div>
+</div>
+</div>
+
+<div class="cpnl" style="left: 50%;">
+<div class="cpnl-l" style="templates//images/toppanel_left.png"></div>
+<div class="cpnl-m">Updates</div>
+<div class="cpnl-r" style="templates//images/toppanel_right.png"></div>
+</div>
+</div>
+
+</div>
+</div><script type="text/javascript">
+// <!--
+var panelFx1 = new toppanel('toppanel-1', { offset: 250, transition: Fx.Transitions.expoOut, duration: 500 });
+panelFx1.addcpnlEvent('#toppanel-1 .cpnl')
+panelFx1.addcpnlEvent('#toppanel-1 .close');
+// -->
+</script>
+
 <jdoc:include type="modules" name="toppanel" />
 </div>
 <!-- /////////////  End module toppanel ////////////////// -->

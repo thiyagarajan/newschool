@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+        type="module"
+        version="1.6.0"
+        client="site"
+        method="upgrade">
+  <name>toppanel</name>
+  <creationDate>01 jan 2007</creationDate>
+  <author>atict.com</author>
+  <copyright>www.atict.com.</copyright>
+  <authorEmail>info@atict.com</authorEmail>
+  <authorUrl>www.atict.com</authorUrl>
+  <version>1.5</version>
+  <description>Module top panel for Joomla! 2.5.</description>
+  <files>
+    <filename module="mod_dinamods">mod_toppanel.php</filename>
+    <filename>mod_toppanel.css.php</filename>
+    <filename>mod_toppanel.js</filename>
+    <filename>mod_dinamods.xml</filename>
+    <filename>helper.php</filename>
+    <filename>index.html</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+    <filename>tmpl/transparent.php</filename>
+    <filename>tmpl/white.php</filename>
+    <filename>tmpl/_item.php</filename>
+    <filename>styles/default/images/index.html</filename>
+    <filename>styles/default/images/bg.png</filename>
+    <filename>styles/default/images/tpnl_l.png</filename>
+    <filename>styles/default/images/tpnl_m.png</filename>
+    <filename>styles/default/images/tpnl_r.png</filename>
+    <filename>styles/default/index.html</filename>
+    <filename>styles/default/style.css</filename>
+    <filename>styles/iehacks.css</filename>
+    <filename>styles/index.html</filename>
+    <filename>styles/style.css</filename>
+    <filename>styles/transparent/images/index.html</filename>
+    <filename>styles/transparent/images/bg.png</filename>
+    <filename>styles/transparent/images/tpnl_l.png</filename>
+    <filename>styles/transparent/images/tpnl_m.png</filename>
+    <filename>styles/transparent/images/tpnl_r.png</filename>
+    <filename>styles/transparent/index.html</filename>
+    <filename>styles/transparent/style.css</filename>
+    <filename>styles/white/images/index.html</filename>
+    <filename>styles/white/images/bg.png</filename>
+    <filename>styles/white/images/tpnl_l.png</filename>
+    <filename>styles/white/images/tpnl_m.png</filename>
+    <filename>styles/white/images/tpnl_r.png</filename>
+    <filename>styles/white/index.html</filename>
+    <filename>styles/white/style.css</filename>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="catid" type="category" default="0" label="Category" extension="com_content"
+               description="A content category which items are used for the toppanel"/>
+        <field name="style" type="list" default="default" label="Style" description="The toppanel styling"
+               filter="string">
+          <option value="default">Default</option>
+        </field>
+        <field name="top_position" type="text" default="0" label="Top Position (px)"
+               description="Absolute position of the whole panel in pixel"/>
+
+        <field name="left_position" type="text" default="50" label="Left Position (%)"
+               description="Absolute position of the cpnl in percent"/>
+        <field name="module_height" type="text" default="" label="Module height (px)"
+               description="Module height in pixel. Max 225px"/>
+        <field name="module_width" type="text" default="" label="Module width (px)"
+               description="Module width in pixel"/>
+        <field name="cpnl_label" type="text" default="Top Panel" label="cpnl label" description="Label for the cpnl"/>
+        <field name="fx_duration" type="text" default="500" label="Slide duration"
+               description="Duration for the toppanel slide effect"/>
+        <field name="order" type="list" default="o_asc" label="Ordering" description="Ordering options" filter="string">
+          <option value="o_asc">Article Order</option>
+          <option value="c_dsc">Recently Added First</option>
+          <option value="m_dsc">Recently Modified First</option>
+          <option value="h_dsc">Most Popular</option>
+          <option value="rnd">Randomize</option>
+        </field>
+        <field name="readmore" type="list" default="0" label="Read More" description="Show/Hide the Read More button"
+               filter="int">
+          <option value="0">Hide</option>
+          <option value="1">Show</option>
+        </field>
+        <field name="items" type="text" default="1" label="No. of Items"
+               description="Maximum no of items to display"/>
+        <field name="moduleclass_sfx" type="text" default="-blank" label="Module Class Suffix"
+               description="Module Class Suffix"/>
+      </fieldset>
+      <fieldset name="advanced">
+        <field name="cache" type="list" default="0" label="Caching"
+               description="Select whether to cache the content of this module" filter="int">
+          <option value="1">Use global</option>
+          <option value="0">No caching</option>
+        </field>
+        <field name="cache_time" type="text" default="900" label="Cache Time"
+               description="The time before the module is recached"/>
+      </fieldset>
+    </fields>
+  </config>
+</extension>

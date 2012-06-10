@@ -1,0 +1,51 @@
+
+div.default div.toppanel div.panel {
+	/*background: #000000 url(styles/default/images/bg.png) 0 100% repeat-x;*/
+	/*color: #969696;*/
+}
+div.default div.toppanel div.content {
+	margin: auto;
+	padding-top: 5px;
+	overflow: hidden;
+}
+div.default div.toppanel div.cpnl {
+	top: 0px;
+	/*width: 120px;*/
+	margin-left: -60px;
+	cursor: pointer;
+}
+div.default div.toppanel div.cpnl img {
+	width: 16px;
+	height: 26px;
+	border: 0;
+}
+
+div.default div.toppanel div.cpnl-l, div.default div.toppanel div.cpnl-r {
+	width: 16px;
+	height: 26px;
+	float: left;
+}
+
+div.default div.toppanel div.cpnl-l {
+	/*background: url(styles/default/images/tpnl_l.png) 100% 0 repeat-x;*/
+}
+
+div.default div.toppanel div.cpnl-r {
+	/*background: url(styles/default/images/tpnl_r.png) 100% 0 repeat-x;*/
+}
+
+div.default div.toppanel div.cpnl-m {
+	/*width: 80px;*/
+	/*height: 26px;*/
+	/*background: url(styles/default/images/tpnl_m.png) repeat-x 100% 0;*/
+	/*float: left;*/
+	/*text-align: center;*/
+	/*font-size: 95%;*/
+	/*line-height: 22px;*/
+	/*overflow: hidden;*/
+	/*color: #ffffff;*/
+}
+
+div.default div.toppanel div.article {
+	padding-bottom: 10px;
+}

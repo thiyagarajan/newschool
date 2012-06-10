@@ -1,0 +1,9 @@
+
+div.toppanel div.panel {
+	position: static;
+}
+
+div.toppanel div.article {
+	clear: none;
+	width: 100%;
+}

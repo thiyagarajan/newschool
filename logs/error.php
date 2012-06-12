@@ -15,3 +15,24 @@
 2012-06-07	12:16:54	INFO	::1	Joomla FAILURE: 	Username and password do not match or you do not have an account yet.
 2012-06-08	03:21:01	INFO	::1	Joomla FAILURE: 	Username and password do not match or you do not have an account yet.
 2012-06-09	14:35:33	INFO	::1	Joomla FAILURE: 	Username and password do not match or you do not have an account yet.
+2012-06-11	02:12:11	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:12:23	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:12:43	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:12:55	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:13:04	INFO	::1	Joomla FAILURE: 	Username and password do not match or you do not have an account yet.
+2012-06-11	02:13:19	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:14:11	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:18:58	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:19:12	INFO	::1	Joomla FAILURE: 	Username and password do not match or you do not have an account yet.
+2012-06-11	02:20:25	INFO	::1	Joomla FAILURE: 	Username and password do not match or you do not have an account yet.
+2012-06-11	02:20:48	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:21:07	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:25:03	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:25:25	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:26:17	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:37:51	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:37:57	INFO	::1	Joomla FAILURE: 	Username and password do not match or you do not have an account yet.
+2012-06-11	02:44:46	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:47:04	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:48:08	INFO	::1	Joomla CANCELED: 	
+2012-06-11	02:55:56	INFO	::1	Joomla FAILURE: 	Username and password do not match or you do not have an account yet.
